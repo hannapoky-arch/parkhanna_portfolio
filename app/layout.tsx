@@ -12,10 +12,35 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Hanna Park",
   description:
-    "Industrial Designer exploring object, systems, and future technologies.",
+    "Industrial Designer exploring objects, systems, and future technologies.",
+
+  openGraph: {
+    title: "Hanna Park",
+    description:
+      "Industrial Designer exploring objects, systems, and future technologies.",
+    url: "https://parkhanna.com",
+    siteName: "Hanna Park",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Hanna Park",
+    description:
+      "Industrial Designer exploring objects, systems, and future technologies.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 
