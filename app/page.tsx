@@ -335,7 +335,7 @@ export default function Home() {
             font-bold
           "
         >
-          ALMOST THERE LAB
+          ABOUT
         </p>
 
         <h2
@@ -409,7 +409,7 @@ export default function Home() {
     </a>
 
     <a
-      href="https://www.instagram.com/almostthere_lab/"
+      href="https://www.instagram.com/khannas_a/"
       target="_blank"
       rel="noopener noreferrer"
       className="block text-[14px] hover:opacity-40 transition-opacity"
@@ -425,7 +425,7 @@ export default function Home() {
 
   <a
     href="/profile"
-    className="block text-[14px] hover:opacity-40 transition-opacity"
+    className="block text-[14px] hover:opacity-40 transition-opacity font-bold"
   >
     Founder / Hanna Park →
   </a>

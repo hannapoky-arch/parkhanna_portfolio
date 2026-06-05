@@ -1,4 +1,24 @@
-export const projects = [
+type Project = {
+  slug: string;
+  number: string;
+  title: string;
+  description: string;
+  type: string;
+  year: string;
+  summary: string;
+  content: string;
+  contributors: string[];
+  literature: string[];
+  images: string[];
+  thumbnailImages?: string[];
+  heroMedia?: {
+    src: string;
+  };
+};
+
+
+
+export const projects: Project[] = [
   {
   slug: "cupidastic",
   number: "AT-0.2",
@@ -12,60 +32,72 @@ export const projects = [
   content: `
 # Introduction
 
-Since the dawn of humanity, the desire to predict the future has remained one of our most enduring aspirations. Forecasts exist because uncertainty exists. In the same way, the future remains valuable precisely because it cannot be fully known.
+Cupidastic explores how environmental toxicity, hormonal disruption, and algorithmic intimacy may converge into a future condition of love.
 
-As a design futurist, I am interested in how preferable futures can emerge from undesirable conditions. Rather than predicting what will happen, my work explores what could happen and what forms of human agency might remain within those futures.
+Microplastics are no longer external pollutants. Their accumulation within human tissues, endocrine systems, and reproductive organs suggests a gradual transformation of biological conditions. As hormonal regulation becomes increasingly unstable, reproduction, attraction, and intimacy are no longer shaped solely by culture or personal choice, but also by synthetic environmental forces.
 
-Cupidastic emerged from this approach. By connecting environmental toxicity, declining fertility, and algorithmic intimacy, the project investigates how seemingly unrelated signals may converge into a single future condition.
+Within this future, AI systems recommend ideal partners through biological compatibility metrics. Yet despite algorithmic optimisation, people continue to search for something that remains difficult to quantify: the irrational spark of attraction.
 
-[image-1]
+Cupidastic emerged from this contradiction. The project asks whether human relationships might still contain forms of ambiguity that resist measurement, prediction, and control.
 
-# Project
+[pair-1-2]
 
-Cupidastic is a future system that transforms the invisible accumulation of microplastics within the human body into a visible condition of hormonal disruption, specifically focusing on the decline of oxytocin.
+# Wearable System
 
-Within this future, people are matched through AI systems designed to identify ideal partners. Yet despite algorithmic compatibility, users must still generate a moment of emotional unpredictability capable of igniting a genuine connection.
-The system enables users to exchange synthetic thermographic signals that remain partially unreadable to machine intelligence. Through these interactions, emotional ambiguity becomes a form of resistance against optimisation.
+Rather than visualising emotional states through screens, Cupidastic translates invisible biological conditions into embodied interactions.
 
-Ultimately, the project asks whether human relationships might continue to contain elements that cannot be fully measured, predicted, or governed.
+The project takes the form of a wearable system consisting of a hug vest and a pair of sensing handles. Together, these artefacts create a physical infrastructure through which emotional signals can be generated, exchanged, and partially concealed.
 
-[image-2]
+The vest encourages close bodily proximity while maintaining a sense of individual agency. Rather than functioning as a passive garment, it actively choreographs interaction between two people. The resulting experience is neither purely technological nor purely emotional; it exists somewhere between data exchange and physical intimacy.
 
-# Research Context
+By focusing on touch, movement, and proximity, the project reframes intimacy as a tactile experience rather than a measurable dataset.
+[pair-3-4]
 
-This project investigates how synthetic environmental conditions, hormonal disruption, and algorithmic governance may reshape future reproduction, care, and intimacy.
+# Data driven intimacy
 
-Microplastics are no longer external pollutants. Their infiltration into endocrine systems, reproductive organs, and human tissues points toward a gradual rewriting of biological conditions. Rather than viewing fertility as purely biological, the project treats reproduction as an entangled condition shaped by ecological systems, political infrastructures, and computational platforms.
+Each handle contains physiological sensing components designed to capture subtle fluctuations associated with emotional arousal.
 
-The project asks what forms of love, care, and human unpredictability might remain when reproductive futures become increasingly measurable and optimised.
+Rather than presenting these measurements as objective truths, Cupidastic transforms them into what the project describes as Synthetic Thermographic Data: speculative emotional signals that visualise intimacy while remaining intentionally ambiguous.
 
-[image-3]
+The system allows users to communicate emotional states through thermal and behavioural cues that are perceptible between consenting individuals, yet difficult for algorithmic systems to fully interpret.
 
-# Method
+In doing so, the project challenges the assumption that emotional experiences should always be transparent, measurable, and optimised. Data becomes a medium for uncertainty rather than control.
+[pair-5-6]
 
-The project was developed through a four-stage speculative design methodology: Sensing, Forecasting, Worldbuilding, and Materialising.
+# Color, material, finish research
 
-Research combined futures methods, environmental humanities, speculative design, and narrative prototyping.
+Material choices were informed by the project’s broader narrative of environmental contamination and bodily adaptation.
 
-Rather than predicting a single future, the process explored multiple possible conditions and translated them into tangible experiences, artefacts, and scenarios.
+The wearable vest is constructed from recycled leather and soft structural components. Recycled leather was selected not only for its tactile qualities but also for its symbolic relationship to synthetic accumulation and material transformation. The material carries traces of previous lives while simultaneously suggesting future forms of adaptation.
 
-[image-4]
+Soft surfaces encourage prolonged physical contact, while the overall form balances protection and vulnerability. The visual language draws from thermal imaging, hormonal fluctuation, and biological warmth, translating invisible physiological conditions into tangible experiences.
+
+Rather than expressing technological precision, the CMF strategy prioritises comfort, emotional proximity, and sensory engagement.
+[image-7]
 
 # Scenario
 
-By the 2040s, reproductive governance increasingly relies on biometric and environmental data.
+Alongside the wearable system, the project includes a speculative scenario film that situates Cupidastic within a broader ecosystem of reproductive governance and algorithmic matchmaking.
 
-Dating platforms rank users through biological compatibility metrics, while governments introduce forms of fertility certification.
+The film follows two individuals navigating a future in which biological compatibility scores, fertility metrics, and AI recommendations increasingly shape romantic relationships. Within this context, Cupidastic becomes a tool for generating moments of uncertainty that cannot be fully predicted or optimised.
 
-Cupidastic emerges as an alternative infrastructure that introduces positive predictive errors into these systems.
+Through narrative prototyping, the film explores how emotional privacy, bodily autonomy, and intimacy might be negotiated within highly quantified futures.
+[image-8]
 
-The project proposes that human unpredictability may become a valuable social resource within algorithmically managed futures.
+# Outcome as a preferable future design 
 
-# Design Outcome
+Cupidastic emerged from a simple contradiction.
 
-The system consists of a wearable vest, a pair of sensing handles, and a speculative service ecosystem designed around the concept of Love Sparks.
+People may trust AI systems to identify statistically ideal partners, while simultaneously desiring someone they cannot fully explain.
 
-Together, these artefacts visualise emotional unpredictability while questioning who has the right to measure, govern, and interpret intimate human experiences.
+The project operates within the space between optimisation and attraction.
+
+By allowing users to generate unreadable emotional signals, Cupidastic introduces what I describe as a positive prediction error: a moment in which human behaviour exceeds computational expectation.
+
+Even in futures shaped by environmental toxicity, hormonal disruption, and algorithmic governance, human relationships may retain one final form of resistance — the ability to remain unpredictable to one another.
+
+Unlike AI systems, humans cannot entirely conceal either love or a sneeze. This remains both a curse and a gift.
+[image-9]
 `,
 
   contributors: [
@@ -82,12 +114,35 @@ Together, these artefacts visualise emotional unpredictability while questioning
     "Sophie Lewis — Full Surrogacy Now (2019)"
   ],
 
-  images: [
-    "/projects/cupidastic-1.jpg",
-    "/projects/cupidastic-2.jpg",
-    "/projects/cupidastic-3.jpg",
-    "/projects/cupidastic-4.jpg"
-  ]
+   heroMedia: {
+  src: "/projects/cupidastic/hero.webp",
+},
+
+thumbnailImages: [
+
+  "/projects/cupidastic/cupidastic-pair2.jpg",
+  "/projects/cupidastic/cupidastic-pair3.jpg",
+
+],
+
+    images: [
+
+  "/projects/cupidastic/cupidastic-pair2.jpg",
+  "/projects/cupidastic/10.jpg",
+
+  "/projects/cupidastic/cupidastic-pair4.jpg",
+  "/projects/cupidastic/cupidastic-pair5.jpg",
+
+  "/projects/cupidastic/cupidastic-pair6.jpg",
+  "/projects/cupidastic/cupidastic-pair7.jpg",
+
+  "/projects/cupidastic/cupidastic-image8-cmf.jpg",
+
+  "/projects/cupidastic/cupidastic-image9-scenario.png",
+
+  "/projects/cupidastic/cupidastic-image10.jpg",
+
+]
 },
 
 
@@ -119,10 +174,10 @@ Together, these artefacts visualise emotional unpredictability while questioning
     "Sophie Lewis — Full Surrogacy Now (2019)"
   ],
     images: [
-      "/projects/memento-mori-1.jpg",
-      "/projects/memento-mori-2.jpg",
-      "/projects/memento-mori-3.jpg",
-      "/projects/memento-mori-4.jpg",
+      "/projects/memento-mori/memento-mori-1.jpg",
+      "/projects/memento-mori/memento-mori-2.jpg",
+      "/projects/memento-mori/memento-mori-3.jpg",
+      "/projects/memento-mori/memento-mori-4.jpg",
     ],
   },
   {

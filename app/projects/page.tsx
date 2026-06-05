@@ -141,54 +141,79 @@ export default function ProjectsPage() {
                 </button>
 
                 {isOpen && (
-                  <div className="pb-12">
-                    <div className="grid gap-10 md:grid-cols-12">
-                      <div className="md:col-span-4">
-                        <p className="max-w-xl text-[18px] leading-[1.55] text-black/65 md:text-[16px]">
-                          {project.summary}
-                        </p>
+  <div className="pb-12">
 
-                        <Link
-                          href={`/projects/${project.slug}`}
-                          className="
-                            mt-10
-                            inline-block
-                            text-[16px]
-                            text-black/40
-                            underline
-                            underline-offset-4
-                            transition-colors
-                            hover:text-[#2f5eff]
-                          "
-                        >
-                          Explore
-                          </Link>
-                        
-                      </div>
+    <div className="grid gap-10 md:grid-cols-12">
 
-                      <div className="grid gap-4 md:col-span-8 md:grid-cols-2">
-                        <div className="aspect-[4/3] overflow-hidden bg-black/5">
-                          <img
-                            src={project.images[0]}
-                            alt={project.title}
-                            className="h-full w-full object-cover"
-                          />
+      {/* LEFT */}
 
-                          <img
-                            src={project.images[1]}
-                            alt={project.title}
-                            className="h-full w-full object-cover"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </article>
-            );
-          })}
+      <div className="md:col-span-3">
+
+        <p className="max-w-xl text-[18px] leading-[1.55] text-black/65 md:text-[16px]">
+          {project.summary}
+        </p>
+
+        <Link
+          href={`/projects/${project.slug}`}
+          className="
+            mt-10
+            inline-block
+            text-[16px]
+            text-black/40
+            underline
+            underline-offset-4
+            transition-colors
+            hover:text-[#2f5eff]
+          "
+        >
+          Explore
+        </Link>
+
+      </div>
+
+      {/* RIGHT */}
+
+      <div className="md:col-span-9 flex justify-end">
+
+        <div className="grid grid-cols-2 gap-2 w-full max-w-[900px]">
+
+          <div className="aspect-[4/3] overflow-hidden">
+            <img
+              src={project.thumbnailImages?.[0] || project.images[0]}
+              alt={project.title}
+              className="h-full w-full object-cover"
+            />
+          </div>
+
+          <div className="aspect-[4/3] overflow-hidden">
+            <img
+              src={project.thumbnailImages?.[1] || project.images[1]}
+              alt={project.title}
+              className="h-full w-full object-cover"
+            />
+          </div>
+
         </div>
+
+      </div>
+
+    </div>
+
+  </div>
+)}
+
+ </article>
+
+            );
+
+          })}
+
+        </div>
+
       </section>
+
     </main>
+
   );
+
 }

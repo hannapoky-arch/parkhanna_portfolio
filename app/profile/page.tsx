@@ -43,6 +43,30 @@ export default function ProfilePage() {
 
         </div>
 
+
+
+{/* PORTRAIT */}
+
+<div className="mx-auto mb-16 max-w-[500px]">
+
+  <img
+
+    src="/profile/hanna-portrait.jpg"
+
+    alt="Hanna Park"
+
+    className="w-full"
+
+  />
+
+    <p className="mt-3 text-[10px] text-right text-black/40 ">
+
+    AI-generated self portrait Hanna Park, 2026
+
+  </p>
+
+</div>
+
        {/* BODY */}
 <div className="mx-auto max-w-[1000px]">
 

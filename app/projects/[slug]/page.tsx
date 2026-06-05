@@ -12,6 +12,7 @@ export default async function ProjectDetailPage({
   const project = projects.find(
     (item) => item.slug === slug);
 
+    console.log(project.heroMedia);
     console.log("slug:", slug);
     console.log("projects:", projects);
 
@@ -35,7 +36,7 @@ export default async function ProjectDetailPage({
         </a>
       </header>
 
-      <section className="mx-auto max-w-[1000px]">
+      <section className="mx-auto max-w-[1400px]">
 
     
         {/* PROJECT META */}
@@ -60,41 +61,85 @@ export default async function ProjectDetailPage({
           </p>
         </div>
 
+        
+
         {/* HERO IMAGE */}
 
-<div className="mb-40">
 
-  <img
+{project.heroMedia?.src && (
 
-    src={project.images[0]}
+  <div className="mb-40">
 
-    alt={project.title}
+    <img
 
-    className="w-full"
+      src={project.heroMedia.src}
+      alt={project.title}
+      className="w-full"
 
-  />
+    />
 
-</div>
+  </div>
 
-        {/* CONTENT */}
+)}
 
-<div className="mx-auto max-w-[1000px]">
+<div className="mx-auto max-w-[1400px]">
 
   {project.content
-    .split(/\[image-(\d+)\]/g)
+    .split(/(\[image-\d+\]|\[pair-\d+-\d+\])/g)
     .map((part, index) => {
 
-      const imageNumber = Number(part);
+      const imageMatch = part.match(/\[image-(\d+)\]/);
 
-      if (!isNaN(imageNumber)) {
+      const pairMatch = part.match(
+        /\[pair-(\d+)-(\d+)\]/
+      );
+
+      // single image
+
+      if (imageMatch) {
+
+        const imageNumber = Number(imageMatch[1]);
+
         return (
-          <div key={index} className="my-16">
+          <div key={index} className="my-24">
             <img
               src={project.images[imageNumber - 1]}
               alt={project.title}
               className="w-full"
             />
           </div>
+        );
+      }
+
+      // two images
+
+      if (pairMatch) {
+
+        const first = Number(pairMatch[1]);
+
+        const second = Number(pairMatch[2]);
+
+        return (
+          <div
+          key={index}
+          className="grid md:grid-cols-2 gap-2 my-24"
+        >
+          <div className="h-[480px] overflow-hidden">
+            <img
+              src={project.images[first - 1]}
+              alt={project.title}
+              className="h-full w-full object-cover"
+            />
+          </div>
+
+          <div className="h-[480px] overflow-hidden">
+            <img
+              src={project.images[second - 1]}
+              alt={project.title}
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </div>
         );
       }
 
@@ -110,15 +155,16 @@ export default async function ProjectDetailPage({
           const body = lines.slice(1).join("\n");
 
           return (
-            <section
-              key={title}
-              className="mb-40"
-            >
+
+          <section
+          key={title}
+          className="mx-auto max-w-[900px] mb-40"
+        >
               <p className="mb-6 text-[18px] text-black/50">
                 {title}
               </p>
 
-              <div className="space-y-8 text-[28px] leading-[1.3] tracking-[-0.035em] md:text-[30px]">
+              <div className="mx-auto max-w-[900px] space-y-8 text-[28px] leading-[1.3] tracking-[-0.035em] md:text-[30px]">
                 {body
                   .split("\n\n")
                   .filter(Boolean)
@@ -134,6 +180,7 @@ export default async function ProjectDetailPage({
     })}
 
 </div>
+
 
 {/* APPENDIX */}
 
