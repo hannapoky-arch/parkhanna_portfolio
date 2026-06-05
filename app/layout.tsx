@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hanna Park",
+  title: "Hanna Park | Portfolio",
   description:
     "Industrial Designer exploring objects, systems, and future technologies.",
 
   openGraph: {
-    title: "Hanna Park",
+    title: "Hanna Park | Portfolio",
     description:
       "Industrial Designer exploring objects, systems, and future technologies.",
     url: "https://parkhanna.com",
