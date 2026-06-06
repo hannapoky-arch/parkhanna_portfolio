@@ -87,14 +87,12 @@ Through narrative prototyping, the film explores how emotional privacy, bodily a
 # Outcome as a preferable future design 
 
 Cupidastic emerged from a simple contradiction.
-
 People may trust AI systems to identify statistically ideal partners, while simultaneously desiring someone they cannot fully explain.
 
 The project operates within the space between optimisation and attraction.
 
 By allowing users to generate unreadable emotional signals, Cupidastic introduces what I describe as a positive prediction error: a moment in which human behaviour exceeds computational expectation.
-
-Even in futures shaped by environmental toxicity, hormonal disruption, and algorithmic governance, human relationships may retain one final form of resistance — the ability to remain unpredictable to one another.
+Even in futures shaped by environmental toxicity, hormonal disruption, and algorithmic governance, human relationships may retain one final form of resistance, the ability to remain unpredictable to one another.
 
 Unlike AI systems, humans cannot entirely conceal either love or a sneeze. This remains both a curse and a gift.
 [image-9]
@@ -108,10 +106,30 @@ Unlike AI systems, humans cannot entirely conceal either love or a sneeze. This 
   ],
 
   literature: [
-    "Dunne & Raby — Speculative Everything (2013)",
-    "Donna Haraway — Staying with the Trouble (2016)",
-    "Timothy Morton — Hyperobjects (2013)",
-    "Sophie Lewis — Full Surrogacy Now (2019)"
+    "Baylis, F. (2019). Altered Inheritance: CRISPR and the Ethics of Human Genome Editing. Harvard University Press.",
+    "Chen, J.Y. & Zhu, H. (2019). Artificial intelligence in healthcare: Past, present and future. Seminars in Cancer Biology.",
+    "Couldry, N. & Mejias, U.A. (2019). The Costs of Connection: How Data Is Colonizing Human Life and Appropriating It for Capitalism. Stanford University Press.",
+    "Descartes, R. (1641). Meditations on First Philosophy.",
+    "Dunne, A. & Raby, F. (2013). Speculative Everything: Design, Fiction, and Social Dreaming. MIT Press.",
+    "Frontiers in Endocrinology. (2022). Microplastic exposure and endocrine disruption. Available at: https://www.frontiersin.org/articles/10.3389/fendo.2022.1084236/full",
+    "Galloway, T.S. & Lewis, C.N. (2016). Marine microplastics spell big problems for future generations. Proceedings of the National Academy of Sciences, 113(9), pp.2331–2333.",
+    "Haraway, D.J. (2016). Staying with the Trouble: Making Kin in the Chthulucene. Duke University Press.",
+    "Krell, D. & Smith, L. (2021). Algorithmic Intimacy and the New Politics of Reproduction.",
+    "Lewis, S. (2019). Full Surrogacy Now: Feminism Against Family. Verso Books.",
+    "Liang, A. (2025). Artificial Intelligence Clones. [Forthcoming].",
+    "Lupton, D. (2016). The Quantified Self: A Sociology of Self-Tracking. Polity Press.",
+    "Malicse, A. (2025). The Future of Human Reproduction and Family Structure. [Forthcoming].",
+    "National Library of Medicine. (2023). Effects of Microplastics on Human Fertility. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9885170/ (Accessed: 5 May 2025).",
+    "Preciado, P.B. (2013). Testo Junkie: Sex, Drugs, and Biopolitics in the Pharmacopornographic Era. The Feminist Press.",
+    "Schmeer, J. (2014). Bioplastic Fantastic: Between Products and Organisms.",
+    "Sharon, T. (2018). When digital health meets digital capitalism: Reinventing care in the algorithmic age. Big Data & Society.",
+    "Strathern, M. (1992). Reproducing the Future: Anthropology, Kinship and the New Reproductive Technologies. Routledge.",
+    "World Health Organization. (2019). Microplastics in Drinking Water.",
+    "Zuboff, S. (2019). The Age of Surveillance Capitalism. PublicAffairs.",
+    "Gila Stopler, 'Biopolitics and Reproductive Justice: Fertility Policies between Women's Rights and State and Community Interests' (2015)",
+    "Timothy Morton (2013), Hyper Object",
+    "Barbara E. Gibson(2020), The micro-politics of caring: tinkering with person-centered rehabilitation, Taylor&Francis group"
+
   ],
 
    heroMedia: {
@@ -152,19 +170,61 @@ thumbnailImages: [
     title: "Memento Mori",
     description: "AI Camera / Privacy Object",
     type: "Objects",
-    year: "2025",
+    year: "2024",
     summary:
-      "A speculative privacy object exploring how people might resist AI-mediated image capture.",
-    content: 
-    '# introduction'
-    
-    ,
+      "A future where memory, legacy, and death become forms of social capital.",
+    content: `
+# Introduction
 
+Memento Mori explores how contemporary society may transform death into a measurable social achievement.
+While modern culture increasingly promotes ideas of well-being, productivity, and self-optimization, conversations surrounding death remain largely avoided. 
+Yet throughout history, individuals have continuously sought ways to shape how they are remembered after death.
+
+The project asks a speculative question: if living well becomes a social obligation, could dying well become one as well?
+Rather than treating death as a purely personal event, Memento Mori examines how future societies might quantify, archive, and evaluate an individual's final legacy through systems of recognition, inheritance, and social value.
+
+[pair-1-2]
+
+# Research
+
+The project was developed through approximately six months of research, interviews, and participatory workshops exploring attitudes towards mortality and end-of-life preparation.
+
+The findings suggested that well-dying is not primarily concerned with the moment of death itself, but with the unresolved concerns accumulated throughout life. Participants frequently associated a meaningful death with the ability to reflect upon, organise, and communicate personal values before passing away.
+
+The research also revealed that active engagement with well-dying practices tends to emerge later in life, particularly among individuals over the age of forty-five. Rather than preparing for death through financial assets alone, participants expressed a desire to leave behind forms of emotional, ethical, and personal inheritance.
+[pair-3-4]
+
+# System Proposal
+
+Memento Mori proposes a speculative service ecosystem composed of two interconnected artefacts: MEMENTO and MORI.
+
+MEMENTO functions as a personal device through which users record and evaluate their final statements. Rather than measuring financial wealth, the system assigns value to reflections, concerns, and personal legacies that might otherwise disappear after death.
+
+Through daily interactions, users gradually construct a unique Well-Dying Identity represented by an individual identification code. This code serves as proof of one’s accumulated end-of-life intentions and becomes a transferable form of symbolic inheritance.
+
+Following a user’s death, MORI enables descendants and loved ones to access these archived memories. Through a tagging system linked to the inherited identification code, future generations can revisit, preserve, and reinterpret the values left behind.
+
+The project therefore imagines a future in which personal legacy becomes a form of social capital, transforming remembrance into a measurable and inheritable asset.[pair-5-6]
+
+
+# Outcome as a Preferable Future Design
+
+Memento Mori does not advocate for a future in which death is reduced to a score, a ranking, or a measurable achievement.
+Instead, the project uses speculation to expose a growing cultural tendency: the desire to optimise every aspect of human life. As productivity, self-improvement, and personal branding increasingly shape contemporary society, it becomes possible to imagine a future in which even death is expected to demonstrate value. Within this scenario, Memento Mori asks a simple question.
+
+If our final legacy could be measured, what would we choose to leave behind?
+
+By transforming memories, concerns, and personal reflections into symbolic assets, the project reveals both the appeal and the discomfort of quantifying human existence. The resulting system is intentionally ambiguous. It simultaneously offers recognition while questioning whether recognition should be necessary at all.
+Rather than proposing a solution, Memento Mori invites reflection on mortality as a shared human condition. In a culture obsessed with proving worth, perhaps the most meaningful legacy is not what can be measured, but what remains impossible to quantify.
+
+`,
   contributors: [
     "Designer — Hanna Park",
-    "Director — Jin Roh",
-    "Creative Technologist — Chanwoo Lee",
-    "Photographer — Sohee Goo"
+    "Director — Suin Gok",
+    "Photographer — Minje Kang",
+    "Actress — Dahyun Woo",
+    "Light Assistant - Jihonn Yoo",
+    "Set Assistant - Sungho Yoon"
   ],
 
   literature: [
