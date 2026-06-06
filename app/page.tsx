@@ -22,7 +22,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/10" />
 
         <div
-          className="absolute left-6 top-6 max-w-[1500px] text-[20px] leading-[1.08] tracking-[-0.03em] text-white md:left-8 md:top-7 md:text-[16px]"
+          className="absolute left-6 top-6 max-w-[1450px] text-[19px] leading-[1.08] tracking-[-0.03em] text-white md:left-8 md:top-7 md:text-18px]"
           style={{ textShadow: "0 2px 12px rgba(0,0,0,.35)" }}
         >
          Hanna Park is an industrial designer working at the intersection of products, interaction, and emerging technologies. 

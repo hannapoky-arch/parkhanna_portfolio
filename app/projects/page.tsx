@@ -29,7 +29,7 @@ export default function ProjectsPage() {
       : projects.filter((project) => project.type === activeFilter);
 
   return (
-    <main className="min-h-screen bg-white px-6 py-8 text-[#111] md:px-10">
+    <main className="min-h-screen bg-white px-6 py-8 pb-48 text-[#111] md:px-10">
       <header className="mb-28 flex items-start justify-between">
         <Link href="/" className="text-[14px] tracking-[0.08em] text-black/70">
           ALMOST THERE LAB
@@ -102,7 +102,7 @@ export default function ProjectsPage() {
                     transition-colors
                     ${ isOpen
                         ? "text-[#2f5eff]"
-                        : "text-black/65 hover:text-[#2f5eff]"
+                        : "text-black hover:text-[#2f5eff]"
                     }
                   `} >
 
@@ -142,63 +142,88 @@ export default function ProjectsPage() {
 
                 {isOpen && (
   <div className="pb-12">
-
     <div className="grid gap-10 md:grid-cols-12">
-
+      
       {/* LEFT */}
+      <div className="md:col-span-3 flex flex-col">
 
-      <div className="md:col-span-3">
+  <p className="max-w-xl text-[18px] leading-[1.55] text-black/65 md:text-[16px]">
+    {project.summary}
 
-        <p className="max-w-xl text-[18px] leading-[1.55] text-black/65 md:text-[16px]">
-          {project.summary}
-        </p>
+  </p>
 
-        <Link
-          href={`/projects/${project.slug}`}
-          className="
-            mt-10
-            inline-block
-            text-[16px]
-            text-black/40
-            underline
-            underline-offset-4
-            transition-colors
-            hover:text-[#2f5eff]
-          "
+  <Link
+
+    href={`/projects/${project.slug}`}
+    className="
+
+      mt-auto
+      pt-8
+      inline-block
+      text-[16px]
+      text-black/40
+      underline
+      underline-offset-4
+      transition-colors
+      hover:text-[#2f5eff]
+
+    "
         >
           Explore
         </Link>
-
       </div>
 
       {/* RIGHT */}
-
+      
       <div className="md:col-span-9 flex justify-end">
+        {project.thumbnailLayout === "landscapePortrait" ? (
+          <div className="grid grid-cols-[1fr_1fr] gap-2 w-fit ml-auto">
+            
+            <div className="h-[420px] overflow-hidden">
+              <img
+                src={project.thumbnailImages?.[0]}
+                alt={project.title}
+                className="h-full w-full object-cover"
+                style={{
+                objectPosition:
+                  project.thumbnailPosition || "center",
 
-        <div className="grid grid-cols-2 gap-2 w-full max-w-[900px]">
+              }}
+              />
+            </div>
 
-          <div className="aspect-[4/3] overflow-hidden">
-            <img
-              src={project.thumbnailImages?.[0] || project.images[0]}
-              alt={project.title}
-              className="h-full w-full object-cover"
-            />
+            <div className="h-[420px] aspect-[3/4] overflow-hidden">
+              <img
+                src={project.thumbnailImages?.[1]}
+                alt={project.title}
+                className="h-full w-full object-cover object-contain"
+              />
+            </div>
           </div>
+        ) : (
 
-          <div className="aspect-[4/3] overflow-hidden">
-            <img
-              src={project.thumbnailImages?.[1] || project.images[1]}
-              alt={project.title}
-              className="h-full w-full object-cover"
-            />
+          //cupidastic
+          <div className="grid grid-cols-2 gap-2 w-full max-w-[900px]">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src={project.thumbnailImages?.[0] || project.images[0]}
+                alt={project.title}
+                className="h-full w-full object-cover"
+              />
+            </div>
+
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src={project.thumbnailImages?.[1] || project.images[1]}
+                alt={project.title}
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
-
-        </div>
-
+        )}
       </div>
 
     </div>
-
   </div>
 )}
 
@@ -212,8 +237,9 @@ export default function ProjectsPage() {
 
       </section>
 
-    </main>
+    <footer className="h-[25vh]" />
 
+    </main>
   );
 
 }

@@ -40,7 +40,7 @@ export default async function ProjectDetailPage({
 
     
         {/* PROJECT META */}
-        <div className="mb-28 text-center">
+        <div className="mb-16 text-center">
           <p className="mb-6 text-[13px] tracking-[0.14em] text-black/45">
             {project.number} / {project.type} / {project.year}
           </p>
@@ -55,35 +55,31 @@ export default async function ProjectDetailPage({
         </div>
 
         {/* LEAD STATEMENT */}
-        <div className="mx-auto mb-24 max-w-[1000px]">
-          <p className="text-[28px] leading-[1.18] tracking-[-0.035em] md:text-[30px]">
+        <div className="mx-auto mb-12 max-w-[1000px]">
+          <p className="text-center leading-[1.11] tracking-[-0.04em] md:text-[30px]">
             {project.summary}
           </p>
         </div>
 
-        
 
         {/* HERO IMAGE */}
 
-
 {project.heroMedia?.src && (
-
-  <div className="mb-40">
-
+  <div
+    className="mb-5 mx-auto"
+    style={{
+      maxWidth: project.imageMaxWidth || "1200px",
+    }}
+  >
     <img
-
       src={project.heroMedia.src}
       alt={project.title}
       className="w-full"
-
     />
-
   </div>
-
 )}
 
 <div className="mx-auto max-w-[1400px]">
-
   {project.content
     .split(/(\[image-\d+\]|\[pair-\d+-\d+\])/g)
     .map((part, index) => {
@@ -94,14 +90,21 @@ export default async function ProjectDetailPage({
         /\[pair-(\d+)-(\d+)\]/
       );
 
-      // single image
+      // SINGLE IMAGE
 
       if (imageMatch) {
 
         const imageNumber = Number(imageMatch[1]);
 
         return (
-          <div key={index} className="my-24">
+          <div
+            key={index}
+            className="my-24 mx-auto"
+            style={{
+              maxWidth:
+                project.imageMaxWidth || "1200px",
+            }}
+          >
             <img
               src={project.images[imageNumber - 1]}
               alt={project.title}
@@ -111,7 +114,7 @@ export default async function ProjectDetailPage({
         );
       }
 
-      // two images
+      // PAIR IMAGE
 
       if (pairMatch) {
 
@@ -121,25 +124,33 @@ export default async function ProjectDetailPage({
 
         return (
           <div
-          key={index}
-          className="grid md:grid-cols-2 gap-2 my-24"
-        >
-          <div className="h-[425px] overflow-hidden">
-            <img
-              src={project.images[first - 1]}
-              alt={project.title}
-              className="h-full w-full object-cover"
-            />
-          </div>
+            key={index}
+            className="mx-auto my-24"
+            style={{
+              maxWidth:
+                project.pairMaxWidth || "1400px",
+            }}
+          >
+            <div className="grid md:grid-cols-2 gap-2">
 
-          <div className="h-[425px] overflow-hidden">
-            <img
-              src={project.images[second - 1]}
-              alt={project.title}
-              className="h-full w-full object-cover"
-            />
+              <div className="h-[4/3] overflow-hidden">
+                <img
+                  src={project.images[first - 1]}
+                  alt={project.title}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
+              <div className="h-[4/3] overflow-hidden">
+                <img
+                  src={project.images[second - 1]}
+                  alt={project.title}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
+            </div>
           </div>
-        </div>
         );
       }
 
@@ -155,11 +166,10 @@ export default async function ProjectDetailPage({
           const body = lines.slice(1).join("\n");
 
           return (
-
-          <section
-          key={title}
-          className="mx-auto max-w-[900px] mb-40"
-        >
+            <section
+              key={title}
+              className="mx-auto max-w-[900px] mb-40"
+            >
               <p className="mb-6 text-[18px] text-black/50">
                 {title}
               </p>
@@ -178,7 +188,6 @@ export default async function ProjectDetailPage({
           );
         });
     })}
-
 </div>
 
 

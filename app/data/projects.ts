@@ -10,7 +10,13 @@ type Project = {
   contributors: string[];
   literature: string[];
   images: string[];
+  imageMaxWidth?: string;
+  pairMaxWidth?: string;
+
   thumbnailImages?: string[];
+  thumbnailLayout?: string;
+  thumbnailPosition?: string;
+
   heroMedia?: {
     src: string;
   };
@@ -26,6 +32,9 @@ export const projects: Project[] = [
   description: "Design Research / Future Love System",
   type: "Research",
   year: "2025",
+   imageMaxWidth: "1400px",
+   pairMaxWidth: "1400px",
+   thumbnailLayout: "equal",
 
   summary: "Cupidastic explores how environmental toxicity, declining fertility, and algorithmic intimacy may converge into a future condition where love becomes measurable, governable, and increasingly optimised.",
 
@@ -171,9 +180,16 @@ thumbnailImages: [
     description: "AI Camera / Privacy Object",
     type: "Objects",
     year: "2024",
+    imageMaxWidth: "800px",
+    pairMaxWidth: "1200px",
+    thumbnailLayout: "landscapePortrait",
+    thumbnailPosition: "50% center",
     summary:
       "A future where memory, legacy, and death become forms of social capital.",
     content: `
+
+    [image-1]
+
 # Introduction
 
 Memento Mori explores how contemporary society may transform death into a measurable social achievement.
@@ -183,7 +199,7 @@ Yet throughout history, individuals have continuously sought ways to shape how t
 The project asks a speculative question: if living well becomes a social obligation, could dying well become one as well?
 Rather than treating death as a purely personal event, Memento Mori examines how future societies might quantify, archive, and evaluate an individual's final legacy through systems of recognition, inheritance, and social value.
 
-[pair-1-2]
+[image-2]
 
 # Research
 
@@ -204,7 +220,8 @@ Through daily interactions, users gradually construct a unique Well-Dying Identi
 
 Following a user’s death, MORI enables descendants and loved ones to access these archived memories. Through a tagging system linked to the inherited identification code, future generations can revisit, preserve, and reinterpret the values left behind.
 
-The project therefore imagines a future in which personal legacy becomes a form of social capital, transforming remembrance into a measurable and inheritable asset.[pair-5-6]
+The project therefore imagines a future in which personal legacy becomes a form of social capital, transforming remembrance into a measurable and inheritable asset.
+[pair-5-6]
 
 
 # Outcome as a Preferable Future Design
@@ -216,6 +233,7 @@ If our final legacy could be measured, what would we choose to leave behind?
 
 By transforming memories, concerns, and personal reflections into symbolic assets, the project reveals both the appeal and the discomfort of quantifying human existence. The resulting system is intentionally ambiguous. It simultaneously offers recognition while questioning whether recognition should be necessary at all.
 Rather than proposing a solution, Memento Mori invites reflection on mortality as a shared human condition. In a culture obsessed with proving worth, perhaps the most meaningful legacy is not what can be measured, but what remains impossible to quantify.
+[image-7]
 
 `,
   contributors: [
@@ -233,13 +251,31 @@ Rather than proposing a solution, Memento Mori invites reflection on mortality a
     "Timothy Morton — Hyperobjects (2013)",
     "Sophie Lewis — Full Surrogacy Now (2019)"
   ],
+
+    thumbnailImages: [
+
+    "/projects/memento-mori/memento-mori-5.jpg",
+    "/projects/memento-mori/memento-mori-1.jpg",
+
+  ],
+
     images: [
       "/projects/memento-mori/memento-mori-1.jpg",
-      "/projects/memento-mori/memento-mori-2.jpg",
+
+      "/projects/memento-mori/memento-mori-2.png",
+
       "/projects/memento-mori/memento-mori-3.jpg",
-      "/projects/memento-mori/memento-mori-4.jpg",
+      "/projects/memento-mori/memento-mori-4.gif",
+
+      "/projects/memento-mori/memento-mori-5.jpg",
+      "/projects/memento-mori/memento-mori-6.gif",
+
+      "/projects/memento-mori/memento-mori-7.jpg",
     ],
   },
+  
+  
+  
   {
     slug: "AeroLoop",
     number: "AT-0.1",
