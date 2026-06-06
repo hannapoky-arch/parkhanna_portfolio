@@ -124,7 +124,7 @@ export default async function ProjectDetailPage({
           key={index}
           className="grid md:grid-cols-2 gap-2 my-24"
         >
-          <div className="h-[480px] overflow-hidden">
+          <div className="h-[430px] overflow-hidden">
             <img
               src={project.images[first - 1]}
               alt={project.title}
@@ -132,7 +132,7 @@ export default async function ProjectDetailPage({
             />
           </div>
 
-          <div className="h-[480px] overflow-hidden">
+          <div className="h-[430px] overflow-hidden">
             <img
               src={project.images[second - 1]}
               alt={project.title}
