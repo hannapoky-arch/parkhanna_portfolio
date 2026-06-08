@@ -30,7 +30,7 @@ export const projects: Project[] = [
   number: "AT-0.2",
   title: "Cupidastic",
   description: "Design Research / Future Love System",
-  type: "Research",
+  type: "Objects",
   year: "2025",
    imageMaxWidth: "1400px",
    pairMaxWidth: "1400px",
@@ -177,7 +177,7 @@ thumbnailImages: [
     slug: "Memento-Mori",
     number: "AT-0.2",
     title: "Memento Mori",
-    description: "AI Camera / Privacy Object",
+    description: "Future Ritual Object / Critical Design",
     type: "Objects",
     year: "2024",
     imageMaxWidth: "800px",
@@ -249,7 +249,8 @@ Rather than proposing a solution, Memento Mori invites reflection on mortality a
     "Dunne & Raby — Speculative Everything (2013)",
     "Donna Haraway — Staying with the Trouble (2016)",
     "Timothy Morton — Hyperobjects (2013)",
-    "Sophie Lewis — Full Surrogacy Now (2019)"
+    "Sophie Lewis — Full Surrogacy Now (2019)",
+
   ],
 
     thumbnailImages: [
@@ -277,39 +278,108 @@ Rather than proposing a solution, Memento Mori invites reflection on mortality a
   
   
   {
-    slug: "AeroLoop",
+    slug: "Kaccia",
     number: "AT-0.1",
-    title: "AeroLoop",
-    description: "Domestic Technology / Ritual Study",
-    type: "Research",
-    year: "Ongoing",
+    title: "Kaccia",
+    description: "CMF / Craftmanship / Luxury",
+    type: "Objects",
+    year: "2022",
     summary:
-      "A research study on how emerging technologies may reshape domestic rituals and everyday behaviours.",
-    content: 
-    '# introduction'
+    "Affordable Luxury for Bathing. A bathing ritual object that reinterprets the traditional Korean scrubbing towel as an affordable luxury for everyday self-care.",
     
-    ,
-    
+    content: `
+
+[image-1]
+
+# Introduction
+
+Kaccia reinterprets the traditional Korean scrubbing towel as a contemporary ritual object for self-care.
+
+Inspired by the culture of Korean bathhouses and family bathing traditions, the project explores how an everyday utilitarian tool can become a source of comfort, attention, and personal luxury. Rather than focusing solely on cleansing, Kaccia proposes bathing as a deliberate ritual through which individuals reconnect with their bodies.
+
+The project asks how familiar cultural artefacts can be transformed without losing the values embedded within them. Through material exploration and form development, Kaccia reimagines the scrubbing towel as an object that celebrates both heritage and personal wellbeing.
+
+[pair-2-3]
+
+# Research
+
+The project began with an investigation into traditional Korean sauna culture, where bathing extends beyond hygiene and becomes a shared social and familial activity.
+
+Within this context, scrubbing one another’s backs with textured towels remains a familiar gesture of care and affection. While these tools are deeply embedded within everyday routines, their forms have remained largely unchanged despite evolving expectations surrounding wellness and self-care.
+
+The research therefore focused on identifying qualities that could transform an ordinary bathing tool into a more intentional and meaningful experience while preserving its cultural significance.
+
+[image-4]
+
+# Form Development
+
+A series of iterative physical studies explored how users might personalise the form of the tool according to their own preferences and bathing habits.
+
+Participants were initially presented with abstract and undefined forms that could be gradually shaped through carving, smoothing, and refinement. Rather than imposing a standardised ergonomic solution, the process allowed each individual to develop a unique relationship with the object.
+
+The resulting forms reveal how personal comfort emerges through continuous interaction, turning the tool into an extension of individual ritual and bodily experience.
+
+[pair-5-6]
+
+# Outcome
+
+The final proposal consists of two complementary bathing tools designed for different stages of the bathing ritual.
+
+Fabric Kaccia incorporates five distinct surfaces with varying textures, enabling users to adapt the experience according to different parts of the body and desired levels of exfoliation.
+
+Wood Kaccia is intended as a secondary tool used after Fabric Kaccia. Its softer tactile qualities encourage slower and more attentive interactions, shifting the focus from cleansing towards sensory engagement and relaxation.
+
+Together, the two artefacts transform an everyday bathing routine into a more considered and personal ritual.
+
+[image-7]
+
+# Reflection
+
+Kaccia explores how design can uncover new meanings within ordinary cultural objects.
+
+Rather than replacing traditional practices, the project proposes a subtle reinterpretation that bridges heritage and contemporary wellness culture. By elevating a familiar bathing tool into a personalised ritual object, Kaccia suggests that luxury does not necessarily emerge from rarity or expense, but from attention, care, and the quality of everyday experiences.
+
+`,
+
   contributors: [
+
     "Designer — Hanna Park",
-    "Director — Jin Roh",
-    "Creative Technologist — Chanwoo Lee",
-    "Photographer — Sohee Goo"
+    "Photographer - Jungsu Lee",
+    "Model - Hyeyoon Jin"
+
   ],
 
   literature: [
-    "Dunne & Raby — Speculative Everything (2013)",
-    "Donna Haraway — Staying with the Trouble (2016)",
-    "Timothy Morton — Hyperobjects (2013)",
-    "Sophie Lewis — Full Surrogacy Now (2019)"
+
   ],
-    images: [
-      "/projects/aeroloop-1.jpg",
-      "/projects/aeroloop-2.jpg",
-      "/projects/aeroloop-3.jpg",
-      "/projects/aeroloop-4.jpg",
-    ],
-  },
+
+  thumbnailImages: [
+
+    "/projects/kaccia/kaccia-1.jpg",
+    "/projects/kaccia/kaccia-5.jpg",
+  ],
+
+
+  images: [
+
+    "/projects/kaccia/kaccia-1.jpg",
+
+    "/projects/kaccia/kaccia-2.jpg",
+
+    "/projects/kaccia/kaccia-3.jpg",
+
+    "/projects/kaccia/kaccia-4.jpg",
+
+    "/projects/kaccia/kaccia-5.jpg",
+
+    "/projects/kaccia/kaccia-6.jpg",
+
+    "/projects/kaccia/kaccia-7.jpg",
+
+  ],
+
+},
+
 ];
 
 export default projects;

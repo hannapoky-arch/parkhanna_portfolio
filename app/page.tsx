@@ -2,12 +2,8 @@
 
 import WordMorph from "./components/WordMorph";
 import FutureDiagram from "./components/FutureDiagram";
-
-const projects = [
-  ["2.0.1", "Flower In Your Mind", "Personal Fountain / Object System", "Research", "2026"],
-  ["2.0.2", "Cupidastic", "AI Camera / Privacy Object", "Objects", "2025"],
-  ["2.0.3", "Future Domestic Rituals", "Domestic Technology / Ritual Study", "Research", "Ongoing"],
-];
+import Link from "next/link";
+import { projects } from "@/app/data/projects";
 
 export default function Home() {
   return (
@@ -172,14 +168,21 @@ export default function Home() {
 
     <div className="space-y-4">
 
-      {projects.map(([_, title, description, type, year]) => (
+      {projects.slice(0, 4).map((project) => (
         
         <article
-          key={title}
+          key={project.slug}
           className="group flex justify-center">
         
 
-          <div className="flex gap-0">
+          <Link
+
+  href={`/projects/${project.slug}`}
+
+  className="block"
+
+>
+<div className="flex gap-0">
 
             <div
               className="
@@ -201,7 +204,7 @@ export default function Home() {
                 group-hover:text-white
               "
             >
-              {title}
+              {project.title}
             </div>
 
             <div
@@ -224,7 +227,7 @@ export default function Home() {
                 group-hover:text-white
               "
             >
-              {description}
+              {project.description}
             </div>
 
             <div
@@ -247,7 +250,7 @@ export default function Home() {
                 group-hover:text-white
               "
             >
-              {type}
+              {project.type}
             </div>
 
             <div
@@ -270,11 +273,13 @@ export default function Home() {
                 group-hover:text-white
               "
             >
-              {year}
+              {project.year}
             </div>
 
           </div>
 
+        </Link> 
+        
         </article>
 
       ))}
