@@ -380,6 +380,88 @@ Rather than replacing traditional practices, the project proposes a subtle reint
 
 },
 
+{
+  slug: "mycorrhizal-research",
+  number: "AT-R.2",
+  title: "Mycorrhizal Intelligence",
+  description: "More-than-Human Design",
+  type: "Research",
+  year: "2025",
+
+  imageMaxWidth: "1200px",
+  pairMaxWidth: "1400px",
+
+  summary:
+    "A research project exploring mycorrhizal networks as models for more-than-human coexistence, ecological intelligence, and reciprocal communication.",
+
+  content: `
+
+[image-1]
+
+# Research Overview
+
+Mycorrhizal Research explores fungal networks as models for more-than-human coexistence, ecological intelligence, and reciprocal communication.
+
+Developed as part of a collaborative research project at the Royal College of Art Design Futures programme, the project investigates how underground fungal systems facilitate exchange, communication, and mutual dependency between plants, fungi, and wider ecosystems. Rather than treating fungi as passive biological matter, the research approaches mycorrhizal networks as active infrastructures of relation.
+
+The project responds to ecological disruption, deforestation, and the fragility of more-than-human systems, with a particular focus on the Amazon rainforest as a site of complex interspecies dependency. Mycorrhizal networks allow plants and fungi to exchange water, minerals, carbohydrates, nitrogen, phosphorus, amino acids, information, and signals. These interactions suggest that intelligence may not be located in a single organism, but distributed across relationships, dependencies, and environmental feedback loops.
+
+Through this lens, the project asks how design might move beyond human-centred problem-solving and instead learn from ecological systems that operate through cooperation, reciprocity, and long-term adaptation. The large-scale poster visualises these exchanges as a form of natural intelligence, translating invisible underground interactions into a public-facing research diagram.
+
+[pair-2-3]
+
+# Research Publication
+
+The final outcome includes a research publication titled The Tales of Natural Intelligence.
+
+The publication compares mycorrhizal systems with human social, political, economic, and geographical structures. Through illustrated spreads, annotated diagrams, and speculative parallels, the research examines how fungal networks can become a lens for rethinking governance, resource exchange, resilience, and interdependence.
+
+Rather than presenting mycorrhizal networks as a metaphor alone, the publication uses them as a critical framework for questioning how human systems define intelligence, value, and survival. Economic parallels are used to examine exchange and distribution; political parallels consider governance, marginality, and systemic imbalance; geographical visualisations connect invasive species, territorial movement, and ecological disruption.
+
+By placing ecological systems beside human systems, the publication does not claim that nature offers a simple solution. Instead, it uses comparison as a design research method: a way to make hidden assumptions visible and to ask what forms of intelligence are ignored when human-centred systems become the default model for decision-making.
+
+[pair-4-5]
+
+# Reflection
+
+Mycorrhizal Research questions whether intelligence must be understood through human cognition, language, or technological computation.
+
+By examining fungal networks as distributed systems of care, exchange, and adaptation, the project opens a way to think about design as participation rather than control. It suggests that future ecological design may depend less on inventing new systems, and more on recognising the sophisticated systems that already exist beneath us.
+
+The project therefore positions research communication as a design practice in itself. Through diagrams, publication design, and visual storytelling, invisible ecological relations become tangible enough to discuss, question, and reinterpret. In doing so, the project reframes more-than-human intelligence not as a distant speculative idea, but as an existing condition that design must learn to notice.
+
+`,
+
+  contributors: [
+    "Researcher — Hanna Park",
+    "Collaborator — Enze Lian",
+    "Collaborator — Chiara Patatti",
+    "Collaborator — Neha Reddy",
+    "Collaborator — Filippo Torlonia"
+  ],
+
+  literature: [
+    "Chen et al. — Arbuscular mycorrhizal fungi reduce aged sorbed sulfur in plant invasion controlled by phosphorus concentration (2020)",
+    "European Parliament — Biodiversity loss: what is causing it and why is it a concern? (2020)",
+    "Bey, K.G., Baraloto, C. and Fine, P.V.A. — Strong coupling of plant and fungal community structure across western Amazonian rainforests (2013)"
+  ],
+
+  thumbnailLayout: "equal",
+  thumbnailImages: [
+    "/projects/mycorrhizal/mycorrhizal-1.jpg",
+    "/projects/mycorrhizal/mycorrhizal-2.jpg"
+  ],
+
+  images: [
+    "/projects/mycorrhizal/mycorrhizal-1.jpg",
+    "/projects/mycorrhizal/mycorrhizal-2.jpg",
+    "/projects/mycorrhizal/mycorrhizal-3.jpg",
+    "/projects/mycorrhizal/mycorrhizal-4.jpg",
+    "/projects/mycorrhizal/mycorrhizal-5.jpg",
+    
+  ],
+},
+
 ];
 
 export default projects;
