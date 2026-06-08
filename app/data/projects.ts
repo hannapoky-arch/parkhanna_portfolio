@@ -383,8 +383,8 @@ Rather than replacing traditional practices, the project proposes a subtle reint
 {
   slug: "mycorrhizal-research",
   number: "AT-R.2",
-  title: "Mycorrhizal Intelligence",
-  description: "More-than-Human Design",
+  title: "Envisioning Futures: Natural Intelligence",
+  description: "More-than-Human / Mycorrhizal Design",
   type: "Research",
   year: "2025",
 
