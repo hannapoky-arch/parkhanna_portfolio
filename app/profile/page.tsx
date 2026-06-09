@@ -8,7 +8,7 @@ export default function ProfilePage() {
           href="/"
           className="text-[14px] tracking-[0.08em] text-black/70"
         >
-          ALMOST THERE LAB
+          HANNA PARK
         </a>
 
         <a
