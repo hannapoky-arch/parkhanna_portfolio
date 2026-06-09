@@ -16,6 +16,7 @@ type Project = {
   thumbnailImages?: string[];
   thumbnailLayout?: string;
   thumbnailPosition?: string;
+  imageCaptions?: string[];
 
   heroMedia?: {
     src: string;
@@ -27,10 +28,10 @@ type Project = {
 export const projects: Project[] = [
   {
   slug: "cupidastic",
-  number: "AT-0.2",
+  number: "AT-R.3",
   title: "Cupidastic",
-  description: "Design Research / Future Love System",
-  type: "Objects",
+  description: "Wearable Object / Love Data Encryption",
+  type: "Research",
   year: "2025",
    imageMaxWidth: "1400px",
    pairMaxWidth: "1400px",
@@ -110,6 +111,7 @@ Unlike AI systems, humans cannot entirely conceal either love or a sneeze. This 
   contributors: [
     "Designer — Hanna Park",
     "Director — Jin Roh",
+    "Model - Bettina Man /  George Rybi / Visha Mehta",
     "Creative Technologist — Chanwoo Lee",
     "Photographer — Sohee Goo"
   ],
@@ -169,15 +171,189 @@ thumbnailImages: [
 
   "/projects/cupidastic/cupidastic-image10.jpg",
 
+],
+
+imageCaptions: [
+
+  "",
+  "",
+  "Design Prototypes(Cupidastic,2025)",
+  "Inspiration image_[Marina Abramović and Ulay. Rest Energy. 1980 | MoMA]",
+  "",
+  "",
+  "",
+  "",
+
 ]
+
 },
 
 
+{
+  slug: "cupidastic-research",
+  number: "AT-R.2",
+  title: "Cupidastic (Research ver.)",
+  description: "Future Research / Algorithmic Intimacy",
+  type: "Research",
+  year: "2025",
+
+  imageMaxWidth: "1200px",
+  pairMaxWidth: "1400px",
+  thumbnailLayout: "single",
+
+  summary:
+    "A speculative research project exploring how microplastic toxicity, hormonal disruption, declining fertility, and AI-mediated intimacy may reshape future love.",
+
+  content: `
+
+[pair-1-2]
+
+# Research Overview
+
+Cupidastic Research investigates how environmental toxicity, reproductive uncertainty, and algorithmic intimacy may converge into a future condition where love becomes biological, measurable, and governable.
+
+The project began from a contradiction. While future technologies increasingly promise prediction, optimisation, and personalised decision-making, love remains valuable precisely because it resists full prediction. If the future were always clear, there would be no need for forecasts. In the same way, uncertainty is not only a source of anxiety, but also the condition that allows preferable futures to be imagined.
+
+This research links microplastics, endocrine disruption, declining fertility, AI matchmaking, and emotional biometrics into one speculative problem framing. Rather than treating these issues as isolated topics, the project reads them as overlapping signals of a future in which human bodies become chemically altered, socially scored, and increasingly mediated by algorithmic systems.
+
+Within this context, Cupidastic asks what forms of love, care, and human unpredictability might remain when intimacy becomes something that can be tracked, recommended, and optimised.
+
+[image-3]
+
+# Problem Framing
+
+Microplastics are no longer external pollutants. Their accumulation within human tissues, endocrine systems, and reproductive organs suggests a slow transformation of biological conditions.
+
+The research focuses on how microplastic-induced hormonal disruption may reshape ideas of reproduction, attraction, and care. Endocrine-disrupting substances such as BPA, phthalates, and dioxins are treated not only as environmental risks, but as forces that may alter the affective and reproductive body. In this speculative framework, reproduction is no longer only genetic, cultural, or political. It becomes entangled with plastic particulates, synthetic materials, and long-term hormonal instability.
+
+The project is structured through four connected layers: microplastic futures, reproduction futurism, future biopolitics, and future love tracking. These layers move across macro scales of state regulation, meso scales of reproductive infrastructure, and micro scales of bodily heat, endocrine fluctuation, and emotional opacity.
+
+Through this framing, Cupidastic Research asks not simply how reproduction might change, but what kinds of unplanned attraction, unreadable love, and reproductive non-events might persist outside algorithmic systems.
+
+[image-4]
+
+# Methodology
+
+The project uses a speculative research methodology structured around four stages: sensing, forecasting, worldbuilding, and materialising.
+
+Sensing began with interdisciplinary research into microplastic toxicity, reproductive health, algorithmic surveillance, emotional biometrics, and posthuman theory. Tools such as STEEP, PESTLE, weak signal analysis, annotated literature review, and visual mapping were used to locate early signals across environmental, social, technological, and anthropological domains.
+
+Forecasting translated these signals into possible, plausible, probable, and preferable futures. Rather than using forecasting to predict a single outcome, the process was used to map emotional, ecological, and political stakes. The Futures Cone and scenario mapping helped position microplastic accumulation, declining fertility, and AI-mediated intimacy within longer temporal frames.
+
+Worldbuilding then transformed these future conditions into narrative systems. The research developed speculative characters, public infrastructures, dating protocols, reproductive certificates, and love-compliance scenarios to make the future emotionally inhabitable rather than purely abstract.
+
+Finally, materialising translated this world into artefacts, interfaces, and embodied interactions. Thermographic imagery, GSR-based affective sensing, recycled leather, hugging gestures, and wearable forms were explored as ways to visualise emotional signals while preserving ambiguity.
+
+[pair-5-6]
+
+# Research Findings
+
+The research identified three key findings that shaped the final design direction.
+
+First, emerging biological studies suggest a possible link between microplastic exposure and oxytocin dysregulation. Wang et al. examined how exposure to polystyrene microplastics reduced social behaviour and brain oxytocin levels in mice through the gut-brain axis. This became an empirical trigger for the project’s speculative premise: an “oxytocin recession” in which environmental toxicity begins to affect future sociality, intimacy, and reproductive behaviour.
+
+Second, an affective sensing workshop at the Royal College of Art explored whether momentary love-spark events could be sensed through physiological and facial-expression data. Participants were placed in different relational pairings and asked to complete gaze and embrace exercises while galvanic skin response and AI-based facial expression analytics were recorded. The workshop suggested that affective intensity can already be partially operationalised through multimodal sensing.
+
+Third, the workshop revealed concern around emotional biometric privacy. Participants expressed discomfort with the possibility that emotional data could be accessed by platforms, governments, or reproductive systems. This finding reframed the project from a simple visualisation of risk into a question of affective data sovereignty.
+
+Together, these findings shifted Cupidastic toward a more critical design question: if future systems can measure attraction, compatibility, and reproductive potential, how might people protect the parts of intimacy that should remain unmeasured?
+
+[image-7]
+
+# Future Scenario
+
+The scenario imagines a future in which microplastics are reclassified as endocrine-disrupting ambient pollutants and daily polymer counts become as normal as pollen or UV indexes.
+
+As reproductive anxiety grows, dating platforms move from personality-based matching to biological compatibility scoring. Wearables, fertility clinics, and AI matchmaking systems begin to produce oxytocin indexes, hormone scores, and reproduction certificates. Love becomes a dashboard metric, while the right to reproduce becomes tied to chemical status and algorithmic legibility.
+
+Within this world, Cupidastic emerges as a system for generating positive prediction errors. Users wear a vest-and-handle kit that produces thermal and physiological signals between consenting individuals. These signals create moments of attraction that are perceptible to each other, but difficult for algorithmic systems to fully classify.
+
+The scenario does not propose a technological solution to microplastic toxicity or declining fertility. Instead, it asks whether human unpredictability can remain a form of resistance inside systems designed to optimise intimacy.
+
+[image-8]
+
+# Research to Object
+
+This research became the conceptual foundation for the Cupidastic wearable system.
+
+The object version of Cupidastic translates the research into a hug vest, sensing handles, material studies, and a speculative scenario film. While the object page focuses on the final artefact and interaction, this research version shows the underlying logic: how environmental toxicity, hormonal disruption, reproductive governance, AI matchmaking, and emotional privacy were connected into one future system.
+
+Cupidastic Research therefore operates as the project’s worldbuilding engine. It defines the conditions under which the object becomes meaningful, and asks what kinds of love might still survive when both bodies and emotions become increasingly available to measurement.
+
+`,
+
+  contributors: [
+    "Researcher — Hanna Park",
+    "Designer / Scenario — Hanna Park",
+    "Scenario Video Director — Jin Roh",
+    "Creative Technologist — Chanwoo Lee",
+    "Concept Photographer — Sohee Goo"
+  ],
+
+  literature: [
+    "Baylis, F. (2019). Altered Inheritance: CRISPR and the Ethics of Human Genome Editing. Harvard University Press.",
+    "Chen, J.Y. & Zhu, H. (2019). Artificial intelligence in healthcare: Past, present and future. Seminars in Cancer Biology.",
+    "Couldry, N. & Mejias, U.A. (2019). The Costs of Connection: How Data Is Colonizing Human Life and Appropriating It for Capitalism. Stanford University Press.",
+    "Descartes, R. (1641). Meditations on First Philosophy.",
+    "Dunne, A. & Raby, F. (2013). Speculative Everything: Design, Fiction, and Social Dreaming. MIT Press.",
+    "Frontiers in Endocrinology. (2022). Microplastic exposure and endocrine disruption. Available at: https://www.frontiersin.org/articles/10.3389/fendo.2022.1084236/full",
+    "Galloway, T.S. & Lewis, C.N. (2016). Marine microplastics spell big problems for future generations. Proceedings of the National Academy of Sciences, 113(9), pp.2331–2333.",
+    "Haraway, D.J. (2016). Staying with the Trouble: Making Kin in the Chthulucene. Duke University Press.",
+    "Krell, D. & Smith, L. (2021). Algorithmic Intimacy and the New Politics of Reproduction.",
+    "Lewis, S. (2019). Full Surrogacy Now: Feminism Against Family. Verso Books.",
+    "Liang, A. (2025). Artificial Intelligence Clones. [Forthcoming].",
+    "Lupton, D. (2016). The Quantified Self: A Sociology of Self-Tracking. Polity Press.",
+    "Malicse, A. (2025). The Future of Human Reproduction and Family Structure. [Forthcoming].",
+    "National Library of Medicine. (2023). Effects of Microplastics on Human Fertility. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9885170/ (Accessed: 5 May 2025).",
+    "Preciado, P.B. (2013). Testo Junkie: Sex, Drugs, and Biopolitics in the Pharmacopornographic Era. The Feminist Press.",
+    "Schmeer, J. (2014). Bioplastic Fantastic: Between Products and Organisms.",
+    "Sharon, T. (2018). When digital health meets digital capitalism: Reinventing care in the algorithmic age. Big Data & Society.",
+    "Strathern, M. (1992). Reproducing the Future: Anthropology, Kinship and the New Reproductive Technologies. Routledge.",
+    "World Health Organization. (2019). Microplastics in Drinking Water.",
+    "Zuboff, S. (2019). The Age of Surveillance Capitalism. PublicAffairs.",
+    "Gila Stopler, 'Biopolitics and Reproductive Justice: Fertility Policies between Women's Rights and State and Community Interests' (2015)",
+    "Timothy Morton (2013), Hyper Object",
+    "Barbara E. Gibson(2020), The micro-politics of caring: tinkering with person-centered rehabilitation, Taylor&Francis group"
+
+  ],
+
+
+  thumbnailImages: [
+    "/projects/cupidastic-research/cupidastic-research-thumbnail2.jpg",
+    
+  ],
+
+  images: [
+    "/projects/cupidastic-research/cupidastic-research-1.jpg",
+    "/projects/cupidastic-research/cupidastic-research-2.jpg",
+    "/projects/cupidastic-research/cupidastic-research-3.jpg",
+    "/projects/cupidastic-research/cupidastic-research-4.jpg",
+    "/projects/cupidastic-research/cupidastic-research-5.jpg",
+    "/projects/cupidastic-research/cupidastic-research-6.jpg",
+    "/projects/cupidastic-research/cupidastic-research-7.jpg",
+    "/projects/cupidastic-research/cupidastic-research-8.jpg",
+    "/projects/cupidastic-research/cupidastic-research-9.jpg"
+  ],
+
+  imageCaptions: [
+
+  "[Figure 1_AI generative image of the 'Reproduction Futurism in Microplastics Age'] \n [Figure 2_A diagram that visualizes the Problem Framing through Worldbuilding] ]",
+  "",
+  "[Figure 3_A diagram that translates the Research into a defined Problem Framing]",
+  "[Figure 4_A newly structured diagram of future methodologies, reinterpreted from those used in this project, Hanna Park (2025)]",
+  "[Figure 5_ attatched photo of Hume.ai workshop at RCA, 2025] \n [Figure 6_ Researches about the ‘Microplastic-Oxytocine’ and ‘Global future fertility’ Forecasting (Wang, L. et al. (2024) 'Exposure to polystyrene microplastics reduces sociality and brain oxytocin levels through the gut-brain axis in mice,' The Science of the Total Environment, 945, p. 174026.), (Global fertility in 204 countries and territories, 2021)]",
+  "",
+  "[Figure 6_Future scenario sketch and Cupidastic system algorithm,2025]",
+  "[Figure 7_ Ghost Signals: Designing Synthetic Love Ignition of Microplasticene, Hanna Park, Royal College of Art, 2025]",
+
+],
+},
+
   {
     slug: "Memento-Mori",
-    number: "AT-0.2",
+    number: "AT-O.2",
     title: "Memento Mori",
-    description: "Future Ritual Object / Critical Design",
+    description: "Critical Design / Future Ritual Object",
     type: "Objects",
     year: "2024",
     imageMaxWidth: "800px",
@@ -279,7 +455,7 @@ Rather than proposing a solution, Memento Mori invites reflection on mortality a
   
   {
     slug: "Kaccia",
-    number: "AT-0.1",
+    number: "AT-O.1",
     title: "Kaccia",
     description: "CMF / Craftmanship / Luxury",
     type: "Objects",
@@ -382,7 +558,7 @@ Rather than replacing traditional practices, the project proposes a subtle reint
 
 {
   slug: "mycorrhizal-research",
-  number: "AT-R.2",
+  number: "AT-R.1",
   title: "Envisioning Futures: Natural Intelligence",
   description: "More-than-Human / Mycorrhizal Design",
   type: "Research",

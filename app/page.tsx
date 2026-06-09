@@ -33,7 +33,7 @@ export default function Home() {
             className="text-[16px] tracking-[-0.03em] text-white"
             style={{ textShadow: "0 2px 14px rgba(0,0,0,.35)" }}
           >
-            ALMOST THERE LAB
+            HANNA PARK
           </p>
         </div>
       */}
@@ -41,8 +41,8 @@ export default function Home() {
 
       <div className="absolute left-12 bottom-6">
       <img
-        src="/almostthere_logo_3.png"
-        alt="Almost There Lab"
+        src="/hannapark_logo_3.png"
+        alt="Hanna Park"
         className="h-7 w-auto"
       />
 
@@ -168,7 +168,7 @@ export default function Home() {
 
     <div className="space-y-4">
 
-      {projects.slice(0, 4).map((project) => (
+      {projects.slice(0, 3).map((project) => (
         
         <article
           key={project.slug}
@@ -320,8 +320,8 @@ export default function Home() {
       <div className="md:col-span-3 pl-6">
 
         <img
-          src="/almostthere_logo_2.png"
-          alt="Almost There Lab"
+          src="/hannapark_logo_2.png"
+          alt="HANNA PARK"
           className="w-[80px]"
         />
 
@@ -438,7 +438,7 @@ export default function Home() {
 
 
             <div className="mt-32 border-black/50 pt-6 text-[12px] text-black/40">
-              © 2026 Almost There Lab. All rights reserved.
+              © 2026 Hanna Park. All rights reserved.
             </div>
 
             

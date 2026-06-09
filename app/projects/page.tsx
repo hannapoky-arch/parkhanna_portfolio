@@ -32,7 +32,7 @@ export default function ProjectsPage() {
     <main className="min-h-screen bg-white px-6 py-8 pb-48 text-[#111] md:px-10">
       <header className="mb-28 flex items-start justify-between">
         <Link href="/" className="text-[14px] tracking-[0.08em] text-black/70">
-          ALMOST THERE LAB
+          HANNA PARK
         </Link>
 
         <Link
@@ -175,53 +175,60 @@ export default function ProjectsPage() {
 
       {/* RIGHT */}
       
-      <div className="md:col-span-9 flex justify-end">
-        {project.thumbnailLayout === "landscapePortrait" ? (
-          <div className="grid grid-cols-[1fr_1fr] gap-2 w-fit ml-auto">
-            
-            <div className="h-[420px] overflow-hidden">
-              <img
-                src={project.thumbnailImages?.[0]}
-                alt={project.title}
-                className="h-full w-full object-cover"
-                style={{
-                objectPosition:
-                  project.thumbnailPosition || "center",
+     {/* RIGHT */}
 
-              }}
-              />
-            </div>
-
-            <div className="h-[420px] aspect-[3/4] overflow-hidden">
-              <img
-                src={project.thumbnailImages?.[1]}
-                alt={project.title}
-                className="h-full w-full object-cover object-contain"
-              />
-            </div>
-          </div>
-        ) : (
-
-          //cupidastic
-          <div className="grid grid-cols-2 gap-2 w-full max-w-[900px]">
-            <div className="aspect-[4/3] overflow-hidden">
-              <img
-                src={project.thumbnailImages?.[0] || project.images[0]}
-                alt={project.title}
-                className="h-full w-full object-cover"
-              />
-            </div>
-
-            <div className="aspect-[4/3] overflow-hidden">
-              <img
-                src={project.thumbnailImages?.[1] || project.images[1]}
-                alt={project.title}
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </div>
-        )}
+<div className="md:col-span-9 flex justify-end">
+  {project.thumbnailLayout === "single" ? (
+    <div className="w-full max-w-[900px] ml-auto">
+      <div className="aspect-[16/9] overflow-hidden">
+        <img
+          src={project.thumbnailImages?.[0] || project.images[0]}
+          alt={project.title}
+          className="h-full w-full object-cover"
+        />
       </div>
+    </div>
+  ) : project.thumbnailLayout === "landscapePortrait" ? (
+    <div className="grid grid-cols-[1fr_1fr] gap-2 w-fit ml-auto">
+      <div className="h-[420px] overflow-hidden">
+        <img
+          src={project.thumbnailImages?.[0] || project.images[0]}
+          alt={project.title}
+          className="h-full w-full object-cover"
+          style={{
+            objectPosition: project.thumbnailPosition || "center",
+          }}
+        />
+      </div>
+
+      <div className="h-[420px] aspect-[3/4] overflow-hidden">
+        <img
+          src={project.thumbnailImages?.[1] || project.images[1]}
+          alt={project.title}
+          className="h-full w-full object-contain"
+        />
+      </div>
+    </div>
+  ) : (
+    <div className="grid grid-cols-2 gap-2 w-full max-w-[900px] ml-auto">
+      <div className="aspect-[4/3] overflow-hidden">
+        <img
+          src={project.thumbnailImages?.[0] || project.images[0]}
+          alt={project.title}
+          className="h-full w-full object-cover"
+        />
+      </div>
+
+      <div className="aspect-[4/3] overflow-hidden">
+        <img
+          src={project.thumbnailImages?.[1] || project.images[1]}
+          alt={project.title}
+          className="h-full w-full object-cover"
+        />
+      </div>
+    </div>
+  )}
+</div>
 
     </div>
   </div>

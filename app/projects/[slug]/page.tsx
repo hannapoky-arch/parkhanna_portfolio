@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { projects } from "../../data/projects";
+import Link from "next/link";
 
 export default async function ProjectDetailPage({
   params,
@@ -25,7 +26,7 @@ export default async function ProjectDetailPage({
     <main className="min-h-screen bg-white px-6 py-8 text-[#111] md:px-10">
       <header className="mb-28 flex items-start justify-between">
         <a href="/" className="text-[14px] tracking-[0.08em] text-black/70">
-          ALMOST THERE LAB
+          HANNA PARK
         </a>
 
         <a
@@ -92,67 +93,137 @@ export default async function ProjectDetailPage({
 
       // SINGLE IMAGE
 
-      if (imageMatch) {
+     if (imageMatch) {
+      const imageNumber = Number(imageMatch[1]);
+      const caption = project.imageCaptions?.[imageNumber - 1];
 
-        const imageNumber = Number(imageMatch[1]);
+      return (
+        <div
+          key={index}
+          className="my-24 mx-auto"
+          style={{
+            maxWidth: project.imageMaxWidth || "1200px",
+          }}
+        >
+          <img
+            src={project.images[imageNumber - 1]}
+            alt={project.title}
+            className="w-full"
+          />
 
-        return (
-          <div
-            key={index}
-            className="my-24 mx-auto"
-            style={{
-              maxWidth:
-                project.imageMaxWidth || "1200px",
-            }}
-          >
+          {caption && (
+            <p className="mt-4 text-[12px] leading-[1.4] text-black/45">
+              {caption}
+            </p>
+          )}
+        </div>
+      );
+    }
+
+    // PAIR IMAGE
+
+if (pairMatch) {
+  const first = Number(pairMatch[1]);
+  const second = Number(pairMatch[2]);
+
+  const firstCaption = project.imageCaptions?.[first - 1];
+  const secondCaption = project.imageCaptions?.[second - 1];
+
+  const captionClassName =
+    "mt-3 whitespace-pre-line text-[13px] leading-[1.4] tracking-[-0.01em] text-black/45";
+
+  const isCupidasticResearchPairOneTwo =
+    project.slug === "cupidastic-research" &&
+    first === 1 &&
+    second === 2;
+
+  if (isCupidasticResearchPairOneTwo) {
+    return (
+      <div
+        key={index}
+        className="mx-auto my-24"
+        style={{
+          maxWidth: project.pairMaxWidth || "1400px",
+        }}
+      >
+        <div className="grid grid-cols-[4fr_6fr] gap-6 items-start">
+          <div>
             <img
-              src={project.images[imageNumber - 1]}
+              src={project.images[first - 1]}
               alt={project.title}
-              className="w-full"
+              className="w-full h-auto"
+            />
+
+            {firstCaption && (
+              <p className={captionClassName}>
+                {firstCaption}
+              </p>
+            )}
+          </div>
+
+          <div>
+            <img
+              src={project.images[second - 1]}
+              alt={project.title}
+              className="w-full h-auto"
+            />
+
+            {secondCaption && (
+              <p className={captionClassName}>
+                {secondCaption}
+              </p>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div
+      key={index}
+      className="mx-auto my-24"
+      style={{
+        maxWidth: project.pairMaxWidth || "1400px",
+      }}
+    >
+      <div className="grid md:grid-cols-2 gap-2">
+        <div>
+          <div className="aspect-[4/3] overflow-hidden">
+            <img
+              src={project.images[first - 1]}
+              alt={project.title}
+              className="h-full w-full object-cover"
             />
           </div>
-        );
-      }
 
-      // PAIR IMAGE
+          {firstCaption && (
+            <p className={captionClassName}>
+              {firstCaption}
+            </p>
+          )}
+        </div>
 
-      if (pairMatch) {
-
-        const first = Number(pairMatch[1]);
-
-        const second = Number(pairMatch[2]);
-
-        return (
-          <div
-            key={index}
-            className="mx-auto my-24"
-            style={{
-              maxWidth:
-                project.pairMaxWidth || "1400px",
-            }}
-          >
-            <div className="grid md:grid-cols-2 gap-2">
-
-              <div className="h-[4/3] overflow-hidden">
-                <img
-                  src={project.images[first - 1]}
-                  alt={project.title}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-
-              <div className="h-[4/3] overflow-hidden">
-                <img
-                  src={project.images[second - 1]}
-                  alt={project.title}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-
-            </div>
+        <div>
+          <div className="aspect-[4/3] overflow-hidden">
+            <img
+              src={project.images[second - 1]}
+              alt={project.title}
+              className="h-full w-full object-cover"
+            />
           </div>
-        );
-      }
+
+          {secondCaption && (
+            <p className={captionClassName}>
+              {secondCaption}
+            </p>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}  
+
 
       return part
         .split("# ")
@@ -188,6 +259,71 @@ export default async function ProjectDetailPage({
           );
         });
     })}
+</div>
+
+
+{/* BOTTOM NAVIGATION */}
+<div className="mx-auto mt-32 mb-24 flex flex-wrap justify-center gap-3">
+  {project.slug === "cupidastic-research" && (
+    <Link
+      href="/projects/cupidastic"
+      className="
+        rounded-full
+        border
+        border-black/10
+        bg-[#f8f8f6]
+        px-8
+        py-4
+        text-[14px]
+        text-black/60
+        transition-all
+        hover:bg-[#2f5eff]
+        hover:text-white
+      "
+    >
+      View Cupidastic Object
+    </Link>
+  )}
+
+  {project.slug === "cupidastic" && (
+    <Link
+      href="/projects/cupidastic-research"
+      className="
+        rounded-full
+        border
+        border-black/10
+        bg-[#f8f8f6]
+        px-8
+        py-4
+        text-[14px]
+        text-black/60
+        transition-all
+        hover:bg-[#2f5eff]
+        hover:text-white
+      "
+    >
+      View Cupidastic Research
+    </Link>
+  )}
+
+  <Link
+    href="/projects"
+    className="
+      rounded-full
+      border
+      border-black/10
+      bg-[#f8f8f6]
+      px-8
+      py-4
+      text-[14px]
+      text-black/60
+      transition-all
+      hover:bg-black
+      hover:text-white
+    "
+  >
+    Back to all projects
+  </Link>
 </div>
 
 
