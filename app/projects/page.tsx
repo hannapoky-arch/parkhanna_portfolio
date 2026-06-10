@@ -173,7 +173,6 @@ export default function ProjectsPage() {
         </Link>
       </div>
 
-      {/* RIGHT */}
       
      {/* RIGHT */}
 
