@@ -152,25 +152,39 @@ export default function ProjectsPage() {
 
   </p>
 
-  <Link
+ <Link
 
-    href={`/projects/${project.slug}`}
-    className="
+  href={`/projects/${project.slug}`}
 
-      mt-auto
-      pt-8
-      inline-block
-      text-[16px]
-      text-black/40
-      underline
-      underline-offset-4
-      transition-colors
-      hover:text-[#2f5eff]
+  
 
-    "
-        >
-          Explore
-        </Link>
+  className="
+
+    mt-auto
+
+    pt-8
+
+    inline-block
+
+    text-[16px]
+
+    text-black/40
+
+    underline
+
+    underline-offset-4
+
+    transition-colors
+
+    hover:text-[#2f5eff]
+
+  "
+
+>
+
+  Explore
+
+</Link>
       </div>
 
       

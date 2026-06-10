@@ -13,10 +13,14 @@ type Project = {
   imageMaxWidth?: string;
   pairMaxWidth?: string;
 
+  videoMaxWidth?: string;
+
   thumbnailImages?: string[];
   thumbnailLayout?: string;
   thumbnailPosition?: string;
   imageCaptions?: string[];
+
+  videos?: string[];
 
   heroMedia?: {
     src: string;
@@ -31,10 +35,11 @@ export const projects: Project[] = [
   number: "AT-R.3",
   title: "Cupidastic",
   description: "Wearable Object / Love Data Encryption",
-  type: "Research",
+  type: "Objects",
   year: "2025",
-   imageMaxWidth: "1400px",
+   imageMaxWidth: "1200px",
    pairMaxWidth: "1400px",
+   videoMaxWidth: "1200px",
    thumbnailLayout: "equal",
 
   summary: "Cupidastic explores how environmental toxicity, declining fertility, and algorithmic intimacy may converge into a future condition where love becomes measurable, governable, and increasingly optimised.",
@@ -106,12 +111,13 @@ Even in futures shaped by environmental toxicity, hormonal disruption, and algor
 
 Unlike AI systems, humans cannot entirely conceal either love or a sneeze. This remains both a curse and a gift.
 [image-9]
+[video-1]
 `,
 
   contributors: [
     "Designer — Hanna Park",
-    "Director — Jin Roh",
-    "Model - Bettina Man /  George Rybi / Visha Mehta",
+    "Video Director — Jin Roh",
+    "Model — Bettina Man /  George Rybi / Visha Mehta",
     "Creative Technologist — Chanwoo Lee",
     "Photographer — Sohee Goo"
   ],
@@ -184,14 +190,18 @@ imageCaptions: [
   "",
   "",
 
-]
+],
 
-},
+  videos: [
+      "https://www.youtube.com/embed/mGZaIs5SNeI"
+    ],
+
+  },
 
 
 {
   slug: "cupidastic-research",
-  number: "AT-R.2",
+  number: "AT-R.3",
   title: "Cupidastic (Research ver.)",
   description: "Future Research / Algorithmic Intimacy",
   type: "Research",
@@ -349,6 +359,119 @@ Cupidastic Research therefore operates as the project’s worldbuilding engine. 
 ],
 },
 
+
+{
+  slug: "mycorrhizal-research",
+  number: "AT-R.2",
+  title: "Envisioning Futures: Natural Intelligence",
+  description: "More-than-Human / Mycorrhizal Design",
+  type: "Research",
+  year: "2025",
+
+  imageMaxWidth: "1200px",
+  pairMaxWidth: "1400px",
+
+  summary:
+    "A research project exploring mycorrhizal networks as models for more-than-human coexistence, ecological intelligence, and reciprocal communication. Developed with curatorial feedback from the Design Museum and later exhibited as a representative project at New Designers London.",
+
+  content: `
+
+[image-1]
+
+# Research Overview
+
+Mycorrhizal Research explores fungal networks as models for more-than-human coexistence, ecological intelligence, and ecological resilience.
+The project begins from the Amazon rainforest as a site where biodiversity loss, deforestation, fire, drought, soil degradation, and habitat fragmentation are not separate issues, but interconnected pressures on a fragile forest system. Research on Amazonian tipping points, forest resilience, carbon emissions, and biodiversity decline suggests that the rainforest is not a stable background, but a living system approaching critical transitions.
+Within this context, the project turns to mycorrhizal networks: underground symbiotic systems through which fungi and plants exchange nutrients, signals, water, minerals, carbon, phosphorus, nitrogen, and stress-related information. These networks complicate the idea that intelligence belongs only to individual organisms. Instead, they suggest a form of intelligence distributed across soil, roots, fungi, plants, and environmental feedback.
+The research asks how design might learn from these more-than-human systems. Rather than treating fungi as metaphors alone, the project examines mycorrhizal networks as ecological infrastructures of exchange, adaptation, competition, and care.
+
+A Design Museum curatorial feedback project exploring mycorrhizal networks as models for more-than-human coexistence, later exhibited as a representative project at New Designers London.
+
+[pair-2-3]
+
+# Research Direction
+
+The research is structured around three connected questions.
+First, how do mycorrhizal networks contribute to forest resilience, biodiversity, and plant adaptation under environmental stress? Studies on arbuscular mycorrhizal fungi show their role in nutrient exchange, ecosystem function, stress tolerance, and plant growth. These relationships reveal that survival is not only an individual capacity, but a negotiated process between species.
+Second, how do human disruptions such as deforestation, deregulation, drought, fire, agriculture, and habitat fragmentation weaken these systems? The Amazon is examined as both an ecological and political landscape, where policy, land use, agribusiness, and environmental degradation reshape the conditions of more-than-human life.
+Third, what can these underground networks teach us about human systems? The project compares mycorrhizal exchange with economic, political, and geographical structures. Ideas such as resource distribution, invasion, competition, market behaviour, and common networks are used to question how humans define value, cooperation, and intelligence.
+
+[pair-4-5]
+
+# Design Translation
+
+The final outcome translates this research into a visual publication and diagrammatic system titled The Tales of Natural Intelligence.
+Through illustrated spreads, annotated diagrams, and speculative parallels, the project compares fungal networks with human systems of economics, politics, geography, and governance. These comparisons do not suggest that nature provides simple solutions for society. Instead, they use ecological systems as a critical lens for exposing the assumptions embedded in human-centred models of intelligence and organisation.
+The publication frames natural intelligence as relational rather than individual. It proposes that intelligence may emerge from exchange, dependency, responsiveness, and long-term adaptation. By visualising invisible underground systems, the project makes more-than-human relations tangible enough to discuss, question, and reinterpret.
+
+# Reflection
+
+Mycorrhizal Research questions whether intelligence must be understood through human cognition, language, or technological computation.
+By studying fungal networks alongside Amazonian ecological disruption, plant invasion, soil systems, and biodiversity resilience, the project positions design as a way of noticing relations that usually remain invisible. It suggests that future ecological design may depend less on inventing new systems, and more on recognising the sophisticated systems of exchange and adaptation that already exist beneath us.
+
+`,
+
+  contributors: [
+    "Researcher, Illustrator — Hanna Park",
+    "Collaborator — Enze Lian",
+    "Collaborator — Chiara Patatti",
+    "Collaborator — Neha Reddy",
+    "Collaborator — Filippo Torlonia",
+    "Curatorial feedback — Design Museum",
+    "Exhibited at — New Designers London"
+  ],
+
+  literature: [
+  `Jaffé, R., Nunes, S., Santos, J., Gastauer, M., Giannini, T., Nascimento, W., Sales, M., Souza, C., Souza-Filho, P., & Fletcher, R. (2021). Forecasting deforestation in the Brazilian Amazon to prioritize conservation efforts. Environmental Research Letters, 16. https://doi.org/10.1088/1748-9326/ac146a.`,
+  `Feng, X., Merow, C., Liu, Z., Park, D., Roehrdanz, P., Maitner, B., Newman, E., Boyle, B., Lien, A., Burger, J., Pires, M., Brando, P., Bush, M., McMichael, C., Neves, D., Nikolopoulos, E., Saleska, S., Hannah, L., Breshears, D., Evans, T., Soto, J., Ernst, K., & Enquist, B. (2021). How deregulation, drought and increasing fire impact Amazonian biodiversity. Nature, 597, 516–521. https://doi.org/10.1038/s41586-021-03876-7.`,
+  `Aleman, J., Aleman, J., Blarquez, O., Elenga, H., Paillard, J., Kimpuni, V., Itoua, G., Issele, G., & Staver, A. (2019). Palaeo-trajectories of forest savannization in the southern Congo. Biology Letters, 15. https://doi.org/10.1098/rsbl.2019.0284.`,
+  `Powell, J., & Rillig, M. (2018). Biodiversity of arbuscular mycorrhizal fungi and ecosystem function. New Phytologist, 220(4), 1059–1075. https://doi.org/10.1111/nph.15119.`,
+  `Flores, B. M., Montoya, E., Sakschewski, B., et al. (2024). Critical transitions in the Amazon forest system. Nature, 626, 555–564. https://doi.org/10.1038/s41586-023-06970-0.`,
+  `Oliver, T., Heard, M., Isaac, N., Roy, D., Procter, D., Eigenbrod, F., Freckleton, R., Hector, A., Orme, C., Petchey, O., Proença, V., Raffaelli, D., Suttle, K., Mace, G., Martín‐López, B., Woodcock, B., & Bullock, J. (2015). Biodiversity and resilience of ecosystem functions. Trends in Ecology & Evolution, 30(11), 673–684. https://doi.org/10.1016/j.tree.2015.08.009.`,
+  `York, L., Carminati, A., Mooney, S., Ritz, K., & Bennett, M. (2016). The holistic rhizosphere: integrating zones, processes, and semantics in the soil influenced by roots. Journal of Experimental Botany, 67(12), 3629–3643. https://doi.org/10.1093/jxb/erw108.`,
+  `Shi, J., Wang, X., & Wang, E. (2022). Mycorrhizal symbiosis in plant growth and stress adaptation: From genes to ecosystems. Annual Review of Plant Biology. https://doi.org/10.1146/annurev-arplant-061722-090342.`,
+  `Wang, W., Shi, J., Xie, Q., Jiang, Y., Yu, N., & Wang, E. (2017). Nutrient exchange and regulation in arbuscular mycorrhizal symbiosis. Molecular Plant, 10(9), 1147–1158. https://doi.org/10.1016/j.molp.2017.07.012.`,
+  `Griggs, K. (2022). Finding the Mother Tree: Discovering the Wisdom of the Forest. Natural Areas Journal, 42, 161–162. https://doi.org/10.3375/0885-8608-42.2.161.`,
+  `Song, Y., Zeng, R., Xu, J., Li, J., Shen, X., & Yihdego, W. (2010). Interplant communication of tomato plants through underground common mycorrhizal networks. PLoS ONE, 5. https://doi.org/10.1371/journal.pone.0013324.`,
+  `Strand, J., Soares-Filho, B., Costa, M., Oliveira, U., Ribeiro, S., Pires, G., Oliveira, A., Rajão, R., May, P., Van Der Hoff, R., Siikamäki, J., Da Motta, R., & Toman, M. (2018). Spatially explicit valuation of the Brazilian Amazon Forest’s ecosystem services. Nature Sustainability, 1, 657–664. https://doi.org/10.1038/s41893-018-0175-0.`,
+  `Boulton, C., Lenton, T., & Boers, N. (2021). Pronounced loss of Amazon rainforest resilience since the early 2000s. Nature Climate Change, 12, 271–278. https://doi.org/10.1038/s41558-022-01287-8.`,
+  `Powell, K., Chase, J., & Knight, T. (2011). A synthesis of plant invasion effects on biodiversity across spatial scales. American Journal of Botany, 98(3), 539–548. https://doi.org/10.3732/ajb.1000402.`,
+  `Veldkamp, E., Schmidt, M., Powers, J., & Corre, M. (2020). Deforestation and reforestation impacts on soils in the tropics. Nature Reviews Earth & Environment, 1, 590–605. https://doi.org/10.1038/s43017-020-0091-5.`,
+  `Pereira, E., Ferreira, P., Ribeiro, L., Carvalho, T., & Pereira, H. (2019). Policy in Brazil (2016–2019) threatens conservation of the Amazon rainforest. Environmental Science & Policy. https://doi.org/10.1016/j.envsci.2019.06.001.`,
+  `Pereira, E., Ribeiro, L., Da Silva Freitas, L., & Pereira, H. (2020). Brazilian policy and agribusiness damage the Amazon rainforest. Land Use Policy, 92, 104491. https://doi.org/10.1016/j.landusepol.2020.104491.`,
+  `Gioria, M., & Osborne, B. (2014). Resource competition in plant invasions: Emerging patterns and research needs. Frontiers in Plant Science, 5. https://doi.org/10.3389/fpls.2014.00501.`,
+  `Fischer, J., & Lindenmayer, D. (2007). Landscape modification and habitat fragmentation: A synthesis. Global Ecology and Biogeography, 16, 265–280. https://doi.org/10.1111/j.1466-8238.2007.00287.x.`,
+  `Gatti, L. V., Basso, L. S., Miller, J. B., et al. (2021). Amazonia as a carbon source linked to deforestation and climate change. Nature, 595, 388–393. https://doi.org/10.1038/s41586-021-03629-6.`,
+  `Wegrowski, B. (2019). Deforestation in the Amazon Rainforest. Ballard Brief. www.ballardbrief.org.`,
+  `Adamatzky, A. (2022). Language of fungi derived from their electrical spiking activity. Royal Society Open Science, 9(4), 211926.`,
+  `Martin, F., & Van Der Heijden, M. (2024). The mycorrhizal symbiosis: Research frontiers in genomics, ecology, and agricultural application. New Phytologist. https://doi.org/10.1111/nph.19541.`,
+  `Clements, D. R., et al. (Eds.). (2022). Global Plant Invasions. Springer International Publishing. https://doi.org/10.1007/978-3-030-89684-3.`,
+  `Awaydul, A., Zhu, W., Yuan, Y., Xiao, J., Hu, H., Chen, X., Koide, R. T., & Cheng, L. (2019). Common mycorrhizal networks influence the distribution of mineral nutrients between an invasive plant, Solidago canadensis, and a native plant, Kummerowa striata. Mycorrhiza, 29(1), 29–38. https://doi.org/10.1007/s00572-018-0873-5.`,
+  `Řezáčová, V., Řezáč, M., Gryndlerová, H., et al. (2020). Arbuscular mycorrhizal fungi favor invasive Echinops sphaerocephalus when grown in competition with native Inula conyzae. Scientific Reports, 10, 20287. https://doi.org/10.1038/s41598-020-77030-0.`,
+  `Yu, Q., Ma, S., Ni, X., Jiang, L., Zhou, Z., Zhu, J., Ji, C., Tang, Z., Cheng, X., & Fang, J. (2023). A test of the mycorrhizal-associated nutrient economy framework in two types of tropical rainforests under nutrient enrichments. Forest Ecosystems, 10, 100083. https://doi.org/10.1016/j.fecs.2022.100083.`,
+  `Branco, S., Schauster, A., Liao, H.-L., & Ruytinx, J. (2022). Mechanisms of stress tolerance and their effects on the ecology and evolution of mycorrhizal fungi. New Phytologist, 235, 2158–2175. https://doi.org/10.1111/nph.18308.`,
+  `Wahab, A., Muhammad, M., Munir, A., Abdi, G., Zaman, W., Ayaz, A., Khizar, C., & Reddy, S. P. P. (2023). Role of arbuscular mycorrhizal fungi in regulating growth, enhancing productivity, and potentially influencing ecosystems under abiotic and biotic stresses. Plants, 12(17), 3102. https://doi.org/10.3390/plants12173102.`,
+  `Loch-Temzelides, T. (2021). Walrasian equilibrium behavior in nature. Proceedings of the National Academy of Sciences, 118(27), e2020961118. https://doi.org/10.1073/pnas.2020961118.`,
+  `Wipf, D., Krajinski, F., van Tuinen, D., Recorbet, G., & Courty, P.-E. (2019). Trading on the arbuscular mycorrhiza market: From arbuscules to common mycorrhizal networks. New Phytologist, 223, 1127–1142. https://doi.org/10.1111/nph.15775.`
+],
+
+  thumbnailLayout: "equal",
+  thumbnailImages: [
+    "/projects/mycorrhizal/mycorrhizal-1.jpg",
+    "/projects/mycorrhizal/mycorrhizal-2.jpg"
+  ],
+
+  images: [
+    "/projects/mycorrhizal/mycorrhizal-1.jpg",
+    "/projects/mycorrhizal/mycorrhizal-2.jpg",
+    "/projects/mycorrhizal/mycorrhizal-3.jpg",
+    "/projects/mycorrhizal/mycorrhizal-4.jpg",
+    "/projects/mycorrhizal/mycorrhizal-5.jpg",
+    
+  ],
+},
+
+
   {
     slug: "Memento-Mori",
     number: "AT-O.2",
@@ -452,7 +575,163 @@ Rather than proposing a solution, Memento Mori invites reflection on mortality a
   },
   
   
-  
+{
+  slug: "plastiglomerate-to-plastic-futures",
+  number: "AT-R.1",
+  title: "Plastiglomerate to Plastic Futures",
+  description: "Material Fieldwork / Anthropocene Futures",
+  type: "Research",
+  year: "2024",
+
+  imageMaxWidth: "1200px",
+  pairMaxWidth: "1400px",
+
+  summary:
+    "A local future research project tracing plastiglomerates from Thames River fieldwork to public material literacy, plastic futures, and speculative adaptation scenarios.",
+
+  content: `
+
+[image-1]
+
+# Research Overview
+
+Plastiglomerate to Plastic Futures is a local future research project that begins with walking, collecting, and observing along the Thames River.
+
+Rather than approaching plastiglomerate as an artistic material alone, the project investigates it as a local signal of the Anthropocene: a material condition through which plastic, stone, shell, bone, sand, organic matter, and urban residue become entangled. The Thames is treated not simply as a site of collection, but as a living archive of environmental transformation.
+
+During the fieldwork, I collected natural objects shaped by urban and riverine conditions. These included stones eroded by currents, shells with altered surfaces, fragments of bone, and ambiguous materials whose origins were difficult to classify. Although many of these objects appeared natural, their forms had already been transformed by the city, the river, pollution, weathering, and human activity.
+
+The project asks how local communities might begin to recognise, discuss, and respond to the materials of the future before they become distant planetary abstractions.
+
+[image-2]
+
+# Local Material Archive
+
+The first phase frames plastiglomerate as a community material.
+
+Plastiglomerates are formed when plastic melts and bonds with rock, sand, shell, clay, and organic matter. They are neither purely synthetic nor purely natural. Instead, they reveal a condition in which human-made waste and nonhuman matter become materially inseparable.
+
+In this project, the collected Thames materials became a way to understand plastiglomerate before physically encountering it as a fixed category. Walking, gathering, sorting, and observing allowed the riverbank to be read as a speculative material archive. Each fragment suggested a different relationship between geology, pollution, urban life, and ecological persistence.
+
+The archive was not intended to aestheticise pollution. Its purpose was to make plastic futures locally legible: to show how the long afterlife of plastic is already embedded in nearby landscapes, riverbanks, and everyday environments.
+
+[pair-3-4]
+[pair-5-6]
+
+# Community Material and Public Translation
+
+The research compares plastiglomerate with bread as two different forms of assembled material.
+
+Plastiglomerate is an accidental community material. It is formed through environmental force, human pollution, heat, erosion, and time. Its components coexist physically, but not necessarily through care, intention, or solidarity. It is a community formed through proximity, damage, and circumstance.
+
+Bread, by contrast, is an intentional community material. It is made through gathering, mixing, kneading, baking, and sharing. Its ingredients lose their individual boundaries, but they do so through a cultural process that creates nourishment and social connection.
+
+By placing plastiglomerate and bread side by side, the project explores two versions of material entanglement: one accidental and ecological, the other deliberate and social. This comparison became a method for translating the issue into a local, public-facing design language. Instead of communicating plastic pollution only through data or fear, the project uses shared material experience to open discussion around what future materials are, who they belong to, and how communities might respond to them.
+
+[image-7]
+
+# Plastic Futures Roadmap
+
+The second phase expands the local material research into a broader future roadmap of plastic entanglement.
+
+If plastiglomerate shows how plastic has already entered geological and ecological systems, microplastics show how plastic may increasingly enter agriculture, food, water, air, and the human body. The project therefore moves from Thames fieldwork to speculative future scenarios involving farming, bodily filtration, smart adaptation, and artificial organs.
+
+The roadmap traces plastic from mass production and synthetic fibres to microplastics, plastiglomerates, future landfills, and bodily accumulation. It uses speculative “What if” questions to map possible consequences: What if natural agriculture could no longer be sustained? What if smart farms became necessary to manage microplastic-free irrigation and soil? What if the value of food depended on its plastic content? What if microplastic accumulation differed by gender, age, or geography? What if future bodies required artificial organs to filter microplastics?
+
+These questions are not predictions. They are design research tools for making current material conditions more confrontable. The roadmap positions plastic not as a single waste problem, but as a long-term infrastructural, agricultural, biological, and social condition.
+
+[image-8]
+
+# Scenario Film
+
+The project also includes a short scenario film that extends the roadmap into a more experiential future condition.
+
+The film imagines a world in which plastic entanglement is no longer external to the body or environment. Smart farms, microplastic filtration, artificial organs, and adaptive infrastructures become part of everyday life. The scenario does not present these futures as desirable solutions. Instead, it asks what kinds of dependency, inequality, and material hierarchy may emerge if plastic contamination becomes something that society manages rather than prevents.
+
+Through film, the research shifts from diagrammatic forecasting to embodied speculation. It allows the viewer to sense the consequences of plastic futures not only as information, but as a lived condition.
+
+[pair-9-10]
+[image-11]
+[video-1]
+
+# Collecting Tools and Romantic Mineralogy
+
+The final extension of the research proposes tools for collecting, classifying, and displaying plastiglomerates and related anthropogenic specimens.
+
+This phase reframes plastiglomerates as future geological inheritances. If rarity has historically shaped the value of gemstones, the project asks what it would mean if plastiglomerates became more symbolically valuable than diamonds. Their value does not come from purity, beauty, or industrial use, but from what they reveal: the entanglement of human desire, industrial residue, ecological damage, and geological time.
+
+The proposed tools are not designed to romanticise pollution. They are designed to help local publics notice, collect, classify, and discuss the materials that plastic culture leaves behind. In this sense, plastiglomerate becomes both a warning material and an educational medium.
+
+[image-12]
+# Reflection
+
+Plastiglomerate to Plastic Futures treats plastic not as a distant environmental issue, but as a local material condition already forming around us.
+
+By grounding the research in the Thames, the project avoids treating the Anthropocene as an abstract planetary concept. It begins from a specific site, specific fragments, and specific acts of walking and collecting. From there, it expands into future scenarios of agriculture, bodily adaptation, artificial organs, and material hierarchy.
+
+The project positions design as a method of local environmental translation. It connects fieldwork, archiving, food-sharing, roadmap-making, film, and speculative tool design into one research process. Its central question is not only what future materials will be made of, but how communities will learn to recognise and respond to them.
+
+
+`,
+
+  contributors: [
+    "Researcher — Hanna Park",
+    "Designer — Hanna Park",
+    "Photographer — Matthew Lee",
+    "Model — Dunni"
+  ],
+
+  literature: [
+    "Patricia L. Corcoran, Charles J. Moore and Kelly Jazvac — An anthropogenic marker horizon in the future rock record (2014)",
+    "Timothy Morton — Hyperobjects (2013)",
+    "Jane Bennett — Vibrant Matter (2010)",
+    "Donna Haraway — Staying with the Trouble (2016)",
+    "Heather Davis — Plastic Matter (2015)"
+  ],
+
+  thumbnailLayout: "equal",
+  thumbnailImages: [
+    "/projects/plastiglomerate/plastiglomerate-1.jpg",
+    "/projects/plastiglomerate/plastiglomerate-12.jpg"
+  ],
+
+  images: [
+    "/projects/plastiglomerate/plastiglomerate-1.jpg",
+    "/projects/plastiglomerate/plastiglomerate-2.jpg",
+    "/projects/plastiglomerate/plastiglomerate-3.jpg",
+    "/projects/plastiglomerate/plastiglomerate-4.jpg",
+    "/projects/plastiglomerate/plastiglomerate-5.jpg",
+    "/projects/plastiglomerate/plastiglomerate-6.jpg",
+    "/projects/plastiglomerate/plastiglomerate-7.jpg",
+    "/projects/plastiglomerate/plastiglomerate-8.jpg",
+    "/projects/plastiglomerate/plastiglomerate-9.jpg",
+    "/projects/plastiglomerate/plastiglomerate-10.jpg",
+    "/projects/plastiglomerate/plastiglomerate-11.jpg",
+    "/projects/plastiglomerate/plastiglomerate-12.jpg"
+  ],
+
+  videos: [
+    "https://player.vimeo.com/video/1055255226"
+  ],
+
+  imageCaptions: [
+    "Copy of Plastiglomerates archiving book, Materiality & Embodied, RCA, 2024",
+    "Thames River fieldwork and collected material observations",
+    "Material archive exploring natural and artificial fragments along the Thames",
+    "",
+    "Bread as an intentional community material and public translation method",
+    "",
+    "",
+    "Future roadmap of plastic entanglement, Design Resilience, RCA, 2024",
+    "Conceptual prototypes for future organs and microplastic adaptation",
+    "",
+    "",
+    "Collecting tools for plastiglomerates and anthropogenic specimens"
+  ],
+},
+
+
+
   {
     slug: "Kaccia",
     number: "AT-O.1",
@@ -556,87 +835,6 @@ Rather than replacing traditional practices, the project proposes a subtle reint
 
 },
 
-{
-  slug: "mycorrhizal-research",
-  number: "AT-R.1",
-  title: "Envisioning Futures: Natural Intelligence",
-  description: "More-than-Human / Mycorrhizal Design",
-  type: "Research",
-  year: "2025",
-
-  imageMaxWidth: "1200px",
-  pairMaxWidth: "1400px",
-
-  summary:
-    "A research project exploring mycorrhizal networks as models for more-than-human coexistence, ecological intelligence, and reciprocal communication.",
-
-  content: `
-
-[image-1]
-
-# Research Overview
-
-Mycorrhizal Research explores fungal networks as models for more-than-human coexistence, ecological intelligence, and reciprocal communication.
-
-Developed as part of a collaborative research project at the Royal College of Art Design Futures programme, the project investigates how underground fungal systems facilitate exchange, communication, and mutual dependency between plants, fungi, and wider ecosystems. Rather than treating fungi as passive biological matter, the research approaches mycorrhizal networks as active infrastructures of relation.
-
-The project responds to ecological disruption, deforestation, and the fragility of more-than-human systems, with a particular focus on the Amazon rainforest as a site of complex interspecies dependency. Mycorrhizal networks allow plants and fungi to exchange water, minerals, carbohydrates, nitrogen, phosphorus, amino acids, information, and signals. These interactions suggest that intelligence may not be located in a single organism, but distributed across relationships, dependencies, and environmental feedback loops.
-
-Through this lens, the project asks how design might move beyond human-centred problem-solving and instead learn from ecological systems that operate through cooperation, reciprocity, and long-term adaptation. The large-scale poster visualises these exchanges as a form of natural intelligence, translating invisible underground interactions into a public-facing research diagram.
-
-[pair-2-3]
-
-# Research Publication
-
-The final outcome includes a research publication titled The Tales of Natural Intelligence.
-
-The publication compares mycorrhizal systems with human social, political, economic, and geographical structures. Through illustrated spreads, annotated diagrams, and speculative parallels, the research examines how fungal networks can become a lens for rethinking governance, resource exchange, resilience, and interdependence.
-
-Rather than presenting mycorrhizal networks as a metaphor alone, the publication uses them as a critical framework for questioning how human systems define intelligence, value, and survival. Economic parallels are used to examine exchange and distribution; political parallels consider governance, marginality, and systemic imbalance; geographical visualisations connect invasive species, territorial movement, and ecological disruption.
-
-By placing ecological systems beside human systems, the publication does not claim that nature offers a simple solution. Instead, it uses comparison as a design research method: a way to make hidden assumptions visible and to ask what forms of intelligence are ignored when human-centred systems become the default model for decision-making.
-
-[pair-4-5]
-
-# Reflection
-
-Mycorrhizal Research questions whether intelligence must be understood through human cognition, language, or technological computation.
-
-By examining fungal networks as distributed systems of care, exchange, and adaptation, the project opens a way to think about design as participation rather than control. It suggests that future ecological design may depend less on inventing new systems, and more on recognising the sophisticated systems that already exist beneath us.
-
-The project therefore positions research communication as a design practice in itself. Through diagrams, publication design, and visual storytelling, invisible ecological relations become tangible enough to discuss, question, and reinterpret. In doing so, the project reframes more-than-human intelligence not as a distant speculative idea, but as an existing condition that design must learn to notice.
-
-`,
-
-  contributors: [
-    "Researcher — Hanna Park",
-    "Collaborator — Enze Lian",
-    "Collaborator — Chiara Patatti",
-    "Collaborator — Neha Reddy",
-    "Collaborator — Filippo Torlonia"
-  ],
-
-  literature: [
-    "Chen et al. — Arbuscular mycorrhizal fungi reduce aged sorbed sulfur in plant invasion controlled by phosphorus concentration (2020)",
-    "European Parliament — Biodiversity loss: what is causing it and why is it a concern? (2020)",
-    "Bey, K.G., Baraloto, C. and Fine, P.V.A. — Strong coupling of plant and fungal community structure across western Amazonian rainforests (2013)"
-  ],
-
-  thumbnailLayout: "equal",
-  thumbnailImages: [
-    "/projects/mycorrhizal/mycorrhizal-1.jpg",
-    "/projects/mycorrhizal/mycorrhizal-2.jpg"
-  ],
-
-  images: [
-    "/projects/mycorrhizal/mycorrhizal-1.jpg",
-    "/projects/mycorrhizal/mycorrhizal-2.jpg",
-    "/projects/mycorrhizal/mycorrhizal-3.jpg",
-    "/projects/mycorrhizal/mycorrhizal-4.jpg",
-    "/projects/mycorrhizal/mycorrhizal-5.jpg",
-    
-  ],
-},
 
 ];
 

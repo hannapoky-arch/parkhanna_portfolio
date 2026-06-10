@@ -80,9 +80,10 @@ export default async function ProjectDetailPage({
   </div>
 )}
 
+
 <div className="mx-auto max-w-[1400px]">
   {project.content
-    .split(/(\[image-\d+\]|\[pair-\d+-\d+\])/g)
+    .split(/(\[image-\d+\]|\[pair-\d+-\d+\]|\[video-\d+\])/g)
     .map((part, index) => {
 
       const imageMatch = part.match(/\[image-(\d+)\]/);
@@ -91,11 +92,64 @@ export default async function ProjectDetailPage({
         /\[pair-(\d+)-(\d+)\]/
       );
 
+      const videoMatch = part.match(/\[video-(\d+)\]/);
+
+      // VIDEO
+
+      if (videoMatch) {
+
+        const videoNumber = Number(videoMatch[1]);
+
+        const videoSrc = project.videos?.[videoNumber - 1];
+
+        console.log("videoSrc:", videoSrc);
+
+        if (!videoSrc) return null;
+
+        return (
+
+          <div
+
+          key={index}
+
+          className="mx-auto my-24"
+
+          style={{
+
+            maxWidth: project.videoMaxWidth || project.imageMaxWidth || "1200px",
+
+          }}
+
+        >
+
+            <div className="aspect-video w-full overflow-hidden">
+
+              <iframe
+
+                src={videoSrc}
+
+                className="h-full w-full"
+
+                allow="autoplay; fullscreen; picture-in-picture"
+
+                allowFullScreen
+
+              />
+
+            </div>
+
+          </div>
+
+        );
+
+      }
+
       // SINGLE IMAGE
 
      if (imageMatch) {
       const imageNumber = Number(imageMatch[1]);
       const caption = project.imageCaptions?.[imageNumber - 1];
+      
 
       return (
         <div
@@ -119,6 +173,8 @@ export default async function ProjectDetailPage({
         </div>
       );
     }
+
+    
 
     // PAIR IMAGE
 
@@ -308,6 +364,8 @@ if (pairMatch) {
 
   <Link
     href="/projects"
+    
+  
     className="
       rounded-full
       border

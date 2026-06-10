@@ -5,6 +5,14 @@ import FutureDiagram from "./components/FutureDiagram";
 import Link from "next/link";
 import { projects } from "@/app/data/projects";
 
+const selectedProjectSlugs = [
+
+  "cupidastic",
+  "cupidastic-research",
+  "plastiglomerate-to-plastic-futures",
+
+];
+
 export default function Home() {
   return (
     <main className="overflow-x-hidden bg-[#f5f5f2] text-[#111]">
@@ -72,23 +80,37 @@ export default function Home() {
 
 </nav>
           <a
+
   href="#projects"
+
   className="
+
     absolute
+
     left-1/2
+
     bottom-7
+
     -translate-x-1/2
+
     fontsans
 
     text-[16px]
+
     tracking-[0.0em]
+
     text-white/80
 
     transition-opacity
+
     hover:opacity-50
+
   "
+
 >
+
   PROJECTS
+
 </a>
 
         <div className="absolute left-1/2 top-[49%] flex -translate-x-1/2 -translate-y-1/2 gap-[11px]">
@@ -168,7 +190,9 @@ export default function Home() {
 
     <div className="space-y-4">
 
-      {projects.slice(0, 3).map((project) => (
+      {projects
+      .filter((project) => selectedProjectSlugs.includes(project.slug))
+      .map((project) => (
         
         <article
           key={project.slug}
