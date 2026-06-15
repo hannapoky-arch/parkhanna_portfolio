@@ -113,33 +113,65 @@ export default function Home() {
 
 </a>
 
-        <div className="absolute left-1/2 top-[49%] flex -translate-x-1/2 -translate-y-1/2 gap-[11px]">
-          {[
-            { label: "Observe", width: "px-7", motion: "bubble-1" },
-            { label: "Prototype", width: "px-14", motion: "bubble-2" },
-            { label: "Materialise", width: "px-10", motion: "bubble-3" },
-          ].map((bubble) => (
-            <span
-              key={bubble.label}
-              className={`
-                bubble-word
-                ${bubble.motion}
-                ${bubble.width}
-                rounded-full
-                bg-white
-                border
-                border-black/5
-                py-3
-                text-[14px]
-                tracking-[0.04em]
-                text-black
-                shadow-[0_10px_30px_rgba(0,0,0,0.22)]
-              `}
-            >
-              {bubble.label}
-            </span>
-          ))}
-        </div>
+        <div className="absolute left-1/2 top-[49%] flex -translate-x-1/2 -translate-y-1/2 gap-[6px] md:gap-[11px]">
+
+  {[
+
+    { label: "Observe", width: "px-5 md:px-7", motion: "bubble-1" },
+
+    { label: "Prototype", width: "px-8 md:px-14", motion: "bubble-2" },
+
+    { label: "Materialise", width: "px-6 md:px-10", motion: "bubble-3" },
+
+  ].map((bubble) => (
+
+    <span
+
+      key={bubble.label}
+
+      className={`
+
+        bubble-word
+
+        ${bubble.motion}
+
+        ${bubble.width}
+
+        rounded-full
+
+        bg-white
+
+        border
+
+        border-black/5
+
+        py-2
+
+        md:py-3
+
+        text-[12px]
+
+        md:text-[14px]
+
+        tracking-[0.04em]
+
+        text-black
+
+        shadow-[0_10px_30px_rgba(0,0,0,0.22)]
+
+        whitespace-nowrap
+
+      `}
+
+    >
+
+      {bubble.label}
+
+    </span>
+
+  ))}
+
+</div>
       </section>
 
       {/* WORD MORPH / MANIFEST */}
@@ -147,11 +179,15 @@ export default function Home() {
         id="manifest"
         className="min-h-screen bg-white px-6 py-28 md:px-10 md:py-36"
       >
-        <div className="mx-auto mb-32 flex min-h-[300px] w-full max-w-6xl items-center justify-center overflow-hidden">
-          <WordMorph />
-        </div>
+        <div className="mx-auto mb-24 flex min-h-[220px] w-full max-w-6xl items-center justify-center overflow-hidden md:mb-32 md:min-h-[300px]">
+        <div className="scale-[0.58] md:scale-100">
+        <WordMorph />
 
-        <p className="mx-auto mb-100 max-w-4xl text-center text-[16px] leading-[1.4] text-black/70 md:text-[16px] font-sans">
+  </div>
+
+</div>
+
+        <p className="mx-auto mb-24 max-w-4xl text-center text-[15px] leading-[1.45] text-black/70 md:mb-100 md:text-[16px] font-sans">
           Design research that turns emerging signals into materials, systems, and experiences.
           <br></br>
           <br></br>
@@ -160,10 +196,15 @@ export default function Home() {
           The aim is not to predict the future correctly, but to create preferable futures and positive forecasting errors: outcomes that become better than anticipated.
         </p>
 
-<div className="mt-16 mb-16">
+<div className="w-full overflow-x-auto">
 
-  <FutureDiagram />
+  <img
 
+    src="/..."
+    alt="Future Diagram"
+    className="w-full object-contain"
+
+  />
 </div>
 
 </section>
@@ -233,10 +274,11 @@ export default function Home() {
 
             <div
               className="
-                w-full md:w-[340px]
-                rounded-full
-                border border-black/10
-                bg-[#f8f8f6]
+                 hidden md:flex
+                  md:w-[340px]
+                  rounded-full
+                  border border-black/10
+                  bg-[#f8f8f6]
 
                 px-8 py-4
 
@@ -256,7 +298,8 @@ export default function Home() {
 
             <div
               className="
-                w-full md:w-[160px]
+                hidden md:flex
+                md:w-[160px]
                 rounded-full
                 border border-black/10
                 bg-[#f8f8f6]
@@ -279,7 +322,8 @@ export default function Home() {
 
             <div
               className="
-                w-full md:w-[130px]
+                hidden md:flex
+                md:w-[130px]
                 rounded-full
                 border border-black/10
                 bg-[#f8f8f6]
