@@ -203,14 +203,14 @@ export default function Home() {
 
   href={`/projects/${project.slug}`}
 
-  className="block"
+  className="block w-full md:w-auto"
 
 >
-<div className="flex gap-0">
+<div className="flex w-full flex-col gap-2 md:w-auto md:flex-row md:gap-0">
 
             <div
               className="
-                w-[520px]
+                w-full md:w-[520px]
                 rounded-full
                 border border-black/10
                 bg-[#f8f8f6]
@@ -233,7 +233,7 @@ export default function Home() {
 
             <div
               className="
-                w-[340px]
+                w-full md:w-[340px]
                 rounded-full
                 border border-black/10
                 bg-[#f8f8f6]
@@ -256,7 +256,7 @@ export default function Home() {
 
             <div
               className="
-                w-[160px]
+                w-full md:w-[160px]
                 rounded-full
                 border border-black/10
                 bg-[#f8f8f6]
@@ -279,7 +279,7 @@ export default function Home() {
 
             <div
               className="
-                w-[130px]
+                w-full md:w-[130px]
                 rounded-full
                 border border-black/10
                 bg-[#f8f8f6]

@@ -202,7 +202,7 @@ if (pairMatch) {
           maxWidth: project.pairMaxWidth || "1400px",
         }}
       >
-        <div className="grid grid-cols-[4fr_6fr] gap-6 items-start">
+        <div className="grid grid-cols-1 gap-6 items-start md:grid-cols-[4fr_6fr]">
           <div>
             <img
               src={project.images[first - 1]}

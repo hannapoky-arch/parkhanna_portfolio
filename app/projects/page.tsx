@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 
 const filters = ["All", "Objects", "Research", "Writing"];
 
+
 export default function ProjectsPage() {
 
   console.log("HELLO TEST");
@@ -109,32 +110,34 @@ export default function ProjectsPage() {
                   <div
                     className="
                       grid
-                      grid-cols-12
-                      gap-6
-                      py-4
-                      text-[32px]
+                      grid-cols-1
+                      gap-2
+                      py-5
+                      text-[22px]
                       leading-tight
                       tracking-[-0.03em]
+                      md:grid-cols-12
+                      md:gap-6
                       md:text-[16px]
                     "
                   >
-                    <div className="col-span-2 ">
+                    <div className="md: col-span-2 ">
                       {project.number}
                     </div>
 
-                    <div className="col-span-4 truncate">
+                    <div className="md: col-span-4">
                       {project.title}
                     </div>
 
-                    <div className="col-span-3 truncate">
+                    <div className="md: col-span-3">
                       {project.description}
                     </div>
 
-                    <div className="col-span-2">
+                    <div className="md: col-span-2">
                       {project.type}
                     </div>
 
-                    <div className="col-span-1 text-right ">
+                    <div className="md: col-span-1 text-right ">
                       {project.year}
                     </div>
                   </div>
@@ -223,7 +226,7 @@ export default function ProjectsPage() {
       </div>
     </div>
   ) : (
-    <div className="grid grid-cols-2 gap-2 w-full max-w-[900px] ml-auto">
+    <div className="grid grid-cols-1 gap-2 w-full max-w-[900px] ml-auto md:grid-cols-2">
       <div className="aspect-[4/3] overflow-hidden">
         <img
           src={project.thumbnailImages?.[0] || project.images[0]}
