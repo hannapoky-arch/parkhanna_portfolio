@@ -200,8 +200,8 @@ export default function Home() {
 
   <img
 
-    src="/..."
-    alt="Future Diagram"
+    src="/future-diagram.png"
+    alt="future diagram"
     className="w-full object-contain"
 
   />
