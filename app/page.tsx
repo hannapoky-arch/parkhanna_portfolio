@@ -198,11 +198,15 @@ export default function Home() {
         id="manifest"
         className="min-h-screen bg-white px-6 py-28 md:px-10 md:py-36"
       >
-        <div className="mx-auto mb-20 flex min-h-[160px] w-full max-w-full items-center justify-center overflow-hidden md:mb-32 md:min-h-[300px] md:max-w-6xl">
-        <div className="origin-center translate-x-4 scale-[0.46] md:translate-x-0 md:scale-100">
-        <WordMorph />
+       <div className="mx-auto mb-12 flex min-h-[150px] w-full items-center justify-center overflow-hidden md:hidden">
+  <p className="text-center text-[30px] leading-[1.05] tracking-[0.08em]">
+    EMERGING<br />
+    SIGNALS
+  </p>
+</div>
 
-  </div>
+<div className="mx-auto mb-32 hidden min-h-[300px] w-full max-w-6xl items-center justify-center overflow-hidden md:flex">
+  <WordMorph />
 
 </div>
 
