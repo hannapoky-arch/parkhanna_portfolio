@@ -26,7 +26,18 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/10" />
 
         <div
-          className="absolute left-6 top-6 max-w-[1450px] text-[19px] leading-[1.08] tracking-[-0.03em] text-white md:left-8 md:top-7 md:text-18px]"
+          className="absolute
+                      left-6
+                      top-6
+                      max-w-[calc(100vw-48px)]
+                      text-[19px]
+                      leading-[1.08]
+                      tracking-[-0.03em]
+                      text-white
+                      md:left-8
+                      md:top-7
+                      md:max-w-[1450px]
+                      md:text-[18px]]"
           style={{ textShadow: "0 2px 12px rgba(0,0,0,.35)" }}
         >
          Hanna Park is an industrial designer working at the intersection of products, interaction, and emerging technologies. 
@@ -179,8 +190,8 @@ export default function Home() {
         id="manifest"
         className="min-h-screen bg-white px-6 py-28 md:px-10 md:py-36"
       >
-        <div className="mx-auto mb-24 flex min-h-[220px] w-full max-w-6xl items-center justify-center overflow-hidden md:mb-32 md:min-h-[300px]">
-        <div className="scale-[0.58] md:scale-100">
+        <div className="mx-40 mb-20 flex min-h-[180px] w-screen max-w-none items-center justify-center overflow-visible md:mb-32 md:min-h-[300px] md:w-full md:max-w-6xl md:overflow-hidden">
+        <div className="origin-center scale-[0.38] md:scale-100">
         <WordMorph />
 
   </div>
@@ -196,7 +207,7 @@ export default function Home() {
           The aim is not to predict the future correctly, but to create preferable futures and positive forecasting errors: outcomes that become better than anticipated.
         </p>
 
-<div className="w-full overflow-x-auto">
+<div className="mx-30 w-full overflow-x-auto md:max-w-[1100px] md:overflow-visible">
 
   <img
 
@@ -205,6 +216,7 @@ export default function Home() {
     className="w-full object-contain"
 
   />
+
 </div>
 
 </section>
