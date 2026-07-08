@@ -55,7 +55,7 @@ export default function ProjectsPage() {
           </h1>
         </div>
 
-        <div className="mb-12 flex flex-wrap justify-center gap-2">
+        <div className="mb-12 flex flex-nowrap justify-center gap-2 overflow-x-auto">
           {filters.map((filter) => (
             <button
               key={filter}
@@ -64,12 +64,15 @@ export default function ProjectsPage() {
                 setOpenedProject(null);
               }}
               className={`
+                shrink-0
                 rounded-full
                 border
                 border-black/10
-                px-6
+                px-4
                 py-3
-                text-[14px]
+                text-[13px]
+                md:px-6
+                md:text-[14px]
                 transition-all
                 ${
                   activeFilter === filter
