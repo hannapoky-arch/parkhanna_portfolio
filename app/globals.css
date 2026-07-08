@@ -272,18 +272,38 @@ body {
 }
 
 .bubble-word {
-  will-change: transform;
+
+  will-change: auto;
+
 }
 
-.bubble-1 {
-  animation: floatLeft 3.2s ease-in-out infinite;
-}
+/* desktop only */
 
-.bubble-2 {
-  animation: floatCenter 2.7s ease-in-out infinite;
-}
+@media (min-width: 768px) {
 
-.bubble-3 {
-  animation: floatRight 3s ease-in-out infinite;
+  .bubble-word {
+
+    will-change: transform;
+
+  }
+
+  .bubble-1 {
+
+    animation: floatLeft 3.2s ease-in-out infinite;
+
+  }
+
+  .bubble-2 {
+
+    animation: floatCenter 2.7s ease-in-out infinite;
+
+  }
+
+  .bubble-3 {
+
+    animation: floatRight 3s ease-in-out infinite;
+
+  }
+
 }
 

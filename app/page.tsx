@@ -124,15 +124,15 @@ export default function Home() {
 
 </a>
 
-        <div className="absolute left-1/2 top-[58%] flex -translate-x-1/2 -translate-y-1/2 gap-[10px] md:top-[49%] md:gap-[11px]">
+        <div className="absolute left-6 right-6 top-[58%] flex -translate-y-1/2 justify-between gap-3 md:left-1/2 md:right-auto md:top-[49%] md:-translate-x-1/2 md:gap-[11px] md:justify-center">
 
   {[
 
-    { label: "Observe", width: "px-6 md:px-7", motion: "bubble-1" },
+    { label: "Observe", width: "px-5 md:px-7", motion: "bubble-1" },
 
-    { label: "Prototype", width: "px-10 md:px-14", motion: "bubble-2" },
+    { label: "Prototype", width: "px-8 md:px-14", motion: "bubble-2" },
 
-    { label: "Materialise", width: "px-8 md:px-10", motion: "bubble-3" },
+    { label: "Materialise", width: "px-6 md:px-10", motion: "bubble-3" },
 
   ].map((bubble) => (
 
@@ -147,6 +147,13 @@ export default function Home() {
         ${bubble.motion}
 
         ${bubble.width}
+        flex
+
+        flex-1
+
+        items-center
+
+        justify-center
 
         rounded-full
 
@@ -157,6 +164,8 @@ export default function Home() {
         border-black/5
 
         py-2
+
+        md:flex-none
 
         md:py-3
 
@@ -171,7 +180,6 @@ export default function Home() {
         shadow-[0_10px_30px_rgba(0,0,0,0.22)]
 
         whitespace-nowrap
-
       `}
 
     >
@@ -190,8 +198,8 @@ export default function Home() {
         id="manifest"
         className="min-h-screen bg-white px-6 py-28 md:px-10 md:py-36"
       >
-        <div className="mx-auto mb-20 flex min-h-[160px] w-full max-w-full items-center justify-center overflow-hidden md:mb-32 md:min-h-[300px] md:max-w-6xl">
-        <div className="origin-center scale-[0.46] md:scale-100">
+        <div className="mx-auto mb-12 flex min-h-[150px] w-full max-w-full items-center justify-center overflow-hidden md:mb-32 md:min-h-[300px] md:max-w-6xl">
+        <div className="origin-center scale-[0.33] md:scale-100">
         <WordMorph />
 
   </div>
