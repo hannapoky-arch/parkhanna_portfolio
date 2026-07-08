@@ -32,7 +32,7 @@ type Project = {
 export const projects: Project[] = [
   {
   slug: "cupidastic",
-  number: "AT-R.3",
+  number: "AT-O.3",
   title: "Cupidastic",
   description: "Wearable Object / Love Data Encryption",
   type: "Objects",
