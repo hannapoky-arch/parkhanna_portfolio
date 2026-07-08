@@ -198,8 +198,8 @@ export default function Home() {
         id="manifest"
         className="min-h-screen bg-white px-6 py-28 md:px-10 md:py-36"
       >
-        <div className="mx-auto mb-12 flex min-h-[150px] w-full max-w-full items-center justify-center overflow-hidden md:mb-32 md:min-h-[300px] md:max-w-6xl">
-        <div className="origin-center scale-[0.33] md:scale-100">
+        <div className="mx-auto mb-20 flex min-h-[160px] w-full max-w-full items-center justify-center overflow-hidden md:mb-32 md:min-h-[300px] md:max-w-6xl">
+        <div className="origin-center translate-x-4 scale-[0.46] md:translate-x-0 md:scale-100">
         <WordMorph />
 
   </div>
@@ -221,7 +221,7 @@ export default function Home() {
 
     src="/future-diagram.png"
     alt="future diagram"
-    className="w-full object-contain"
+    className="w-[115%] max-w-none -translate-x-10 object-contain md:w-full md:max-w-full md:translate-x-0"
 
   />
 
