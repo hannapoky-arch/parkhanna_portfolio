@@ -58,71 +58,44 @@ export default function Home() {
       */}
 
 
-      <div className="absolute left-12 bottom-6">
-      <img
-        src="/hannapark_logo_3.png"
-        alt="Hanna Park"
-        className="h-7 w-auto"
-      />
+     <div className="absolute bottom-6 left-6 right-6 grid grid-cols-3 items-center text-white md:bottom-8 md:left-8 md:right-8">
+  <div className="flex justify-start">
+    <img
+      src="/hannapark_logo_3.png"
+      alt="Hanna Park"
+      className="h-7 w-auto"
+    />
+  </div>
 
-    </div>
-
-
-     <nav className="absolute bottom-6 right-6 flex gap-5 text-[16px] tracking-[-0.03em] text-white md:right-8 md:bottom-8">
-
-
-{/* 
-  <a href="mailto:hannapoky@email.com">
-    EMAIL
+  <a
+    href="#projects"
+    className="
+      text-center
+      fontsans
+      text-[16px]
+      tracking-[0.0em]
+      text-white/80
+      transition-opacity
+      hover:opacity-50
+    "
+  >
+    PROJECTS
   </a>
 
   <a
-    href="https://www.instagram.com/almostthere_lab/"
-    target="_blank"
-    rel="noopener noreferrer"
+    href="/profile"
+    className="
+      text-right
+      text-[16px]
+      tracking-[-0.03em]
+      text-white/80
+      transition-opacity
+      hover:opacity-50
+    "
   >
-    INSTAGRAM
+    PROFILE
   </a>
-  */}
-
- <a href="/profile">
-  PROFILE
-</a>
-
-</nav>
-          <a
-
-  href="#projects"
-
-  className="
-
-    absolute
-
-    left-1/2
-
-    bottom-7
-
-    -translate-x-1/2
-
-    fontsans
-
-    text-[16px]
-
-    tracking-[0.0em]
-
-    text-white/80
-
-    transition-opacity
-
-    hover:opacity-50
-
-  "
-
->
-
-  PROJECTS
-
-</a>
+</div>
 
         <div className="absolute left-6 right-6 top-[58%] flex -translate-y-1/2 justify-between gap-3 md:left-1/2 md:right-auto md:top-[49%] md:-translate-x-1/2 md:gap-[11px] md:justify-center">
 
@@ -196,13 +169,12 @@ export default function Home() {
       {/* WORD MORPH / MANIFEST */}
       <section
         id="manifest"
-        className="min-h-screen bg-white px-6 py-28 md:px-10 md:py-36"
+        className="min-h-screen bg-white px-6 py-16 md:px-10 md:py-36"
       >
-       <div className="mx-auto mb-12 flex min-h-[150px] w-full items-center justify-center overflow-hidden md:hidden">
-  <p className="text-center text-[30px] leading-[1.05] tracking-[0.08em]">
-    EMERGING<br />
-    SIGNALS
-  </p>
+       <div className="relative mx-auto mb-16 h-[150px] w-full overflow-hidden md:hidden">
+  <div className="absolute left-1/2 top-1/2 origin-center -translate-x-1/2 -translate-y-1/2 scale-[0.32]">
+    <WordMorph />
+  </div>
 </div>
 
 <div className="mx-auto mb-32 hidden min-h-[300px] w-full max-w-6xl items-center justify-center overflow-hidden md:flex">

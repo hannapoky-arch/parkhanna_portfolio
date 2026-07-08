@@ -272,38 +272,66 @@ body {
 }
 
 .bubble-word {
-
-  will-change: auto;
-
+  will-change: transform;
 }
 
-/* desktop only */
+.bubble-1 {
+  animation: mobileFloatLeft 3.2s ease-in-out infinite !important;
+}
 
-@media (min-width: 768px) {
+.bubble-2 {
+  animation: mobileFloatCenter 2.7s ease-in-out infinite !important;
+}
 
-  .bubble-word {
+.bubble-3 {
+  animation: mobileFloatRight 3s ease-in-out infinite !important;
+}
 
-    will-change: transform;
-
+/* mobile motion */
+@keyframes mobileFloatLeft {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
   }
 
+  50% {
+    transform: translate3d(-8px, -5px, 0);
+  }
+}
+
+@keyframes mobileFloatCenter {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 7px, 0);
+  }
+}
+
+@keyframes mobileFloatRight {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(8px, -5px, 0);
+  }
+}
+
+/* desktop motion */
+@media (min-width: 768px) {
   .bubble-1 {
-
-    animation: floatLeft 3.2s ease-in-out infinite;
-
+    animation: floatLeft 3.2s ease-in-out infinite !important;
   }
 
   .bubble-2 {
-
-    animation: floatCenter 2.7s ease-in-out infinite;
-
+    animation: floatCenter 2.7s ease-in-out infinite !important;
   }
 
   .bubble-3 {
-
-    animation: floatRight 3s ease-in-out infinite;
-
+    animation: floatRight 3s ease-in-out infinite !important;
   }
-
 }
-
