@@ -50,7 +50,7 @@ export default function ProjectsPage() {
             ALL PROJECTS
           </p>
 
-          <h1 className="mx-auto max-w-6xl text-[34px] leading-[1.08] tracking-[-0.05em] md:text-[30px]">
+          <h1 className="mx-auto max-w-6xl text-[26px] leading-[1.08] tracking-[-0.05em] md:text-[30px]">
             Research, objects, systems, and future studies.
           </h1>
         </div>
@@ -91,7 +91,7 @@ export default function ProjectsPage() {
             const isOpen = openedProject === project.slug;
 
             return (
-              <article key={project.title} className="border-b border-black/15">
+             <article key={project.title} className="border-b border-black/10">
                 <button
                   type="button"
                   onClick={() => {
@@ -111,39 +111,59 @@ export default function ProjectsPage() {
                   `} >
 
                   <div
-                    className="
-                      grid
-                      grid-cols-1
-                      gap-2
-                      py-5
-                      text-[22px]
-                      leading-tight
-                      tracking-[-0.03em]
-                      md:grid-cols-12
-                      md:gap-6
-                      md:text-[16px]
-                    "
-                  >
-                    <div className="md: col-span-2 ">
-                      {project.number}
+                  className="
+                    py-6
+                    md:grid
+                    md:grid-cols-12
+                    md:gap-6
+                    md:py-4
+                    md:text-[16px]
+                    md:leading-tight
+                    md:tracking-[-0.03em]
+                  "
+                >
+                  {/* MOBILE */}
+                  <div className="md:hidden">
+                    <div className="mb-4 flex items-center justify-between text-[14px] tracking-[-0.02em] text-black/45">
+                      <span>{project.number}</span>
+                      <span>{project.year}</span>
                     </div>
 
-                    <div className="md: col-span-4">
+                    <h3 className="mb-3 text-[28px] leading-[1.05] tracking-[-0.05em] text-black">
                       {project.title}
-                    </div>
+                    </h3>
 
-                    <div className="md: col-span-3">
+                    <p className="mb-4 max-w-[92%] text-[15px] leading-[1.35] tracking-[-0.02em] text-black/55">
                       {project.description}
-                    </div>
+                    </p>
 
-                    <div className="md: col-span-2">
+                    <span className="inline-flex rounded-full border border-black/10 px-4 py-2 text-[13px] text-black/50">
                       {project.type}
-                    </div>
-
-                    <div className="md: col-span-1 text-right ">
-                      {project.year}
-                    </div>
+                    </span>
                   </div>
+
+                  {/* DESKTOP */}
+                  <div className="hidden md:col-span-2 md:block">
+                    {project.number}
+                  </div>
+
+                  <div className="hidden truncate md:col-span-4 md:block">
+                    {project.title}
+                  </div>
+
+                  <div className="hidden truncate md:col-span-3 md:block">
+                    {project.description}
+                  </div>
+
+                  <div className="hidden md:col-span-2 md:block">
+                    {project.type}
+                  </div>
+
+                  <div className="hidden text-right md:col-span-1 md:block">
+                    {project.year}
+                  </div>
+                </div>
+
                 </button>
 
                 {isOpen && (
