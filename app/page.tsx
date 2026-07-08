@@ -124,15 +124,15 @@ export default function Home() {
 
 </a>
 
-        <div className="absolute left-1/2 top-[49%] flex -translate-x-1/2 -translate-y-1/2 gap-[6px] md:gap-[11px]">
+        <div className="absolute left-1/2 top-[58%] flex -translate-x-1/2 -translate-y-1/2 gap-[10px] md:top-[49%] md:gap-[11px]">
 
   {[
 
-    { label: "Observe", width: "px-5 md:px-7", motion: "bubble-1" },
+    { label: "Observe", width: "px-6 md:px-7", motion: "bubble-1" },
 
-    { label: "Prototype", width: "px-8 md:px-14", motion: "bubble-2" },
+    { label: "Prototype", width: "px-10 md:px-14", motion: "bubble-2" },
 
-    { label: "Materialise", width: "px-6 md:px-10", motion: "bubble-3" },
+    { label: "Materialise", width: "px-8 md:px-10", motion: "bubble-3" },
 
   ].map((bubble) => (
 
@@ -190,8 +190,8 @@ export default function Home() {
         id="manifest"
         className="min-h-screen bg-white px-6 py-28 md:px-10 md:py-36"
       >
-        <div className="mx-40 mb-20 flex min-h-[180px] w-screen max-w-none items-center justify-center overflow-visible md:mb-32 md:min-h-[300px] md:w-full md:max-w-6xl md:overflow-hidden">
-        <div className="origin-center scale-[0.38] md:scale-100">
+        <div className="mx-auto mb-20 flex min-h-[160px] w-full max-w-full items-center justify-center overflow-hidden md:mb-32 md:min-h-[300px] md:max-w-6xl">
+        <div className="origin-center scale-[0.46] md:scale-100">
         <WordMorph />
 
   </div>
@@ -207,7 +207,7 @@ export default function Home() {
           The aim is not to predict the future correctly, but to create preferable futures and positive forecasting errors: outcomes that become better than anticipated.
         </p>
 
-<div className="mx-30 w-full overflow-x-auto md:max-w-[1100px] md:overflow-visible">
+<div className="mx-auto w-full max-w-[1000px] overflow-hidden px-0">
 
   <img
 
@@ -402,7 +402,7 @@ export default function Home() {
         <img
           src="/hannapark_logo_2.png"
           alt="HANNA PARK"
-          className="w-[80px]"
+          className="w-[50px]"
         />
 
       </div>
