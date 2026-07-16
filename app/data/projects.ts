@@ -290,6 +290,7 @@ The object version of Cupidastic translates the research into a hug vest, sensin
 
 Cupidastic Research therefore operates as the project’s worldbuilding engine. It defines the conditions under which the object becomes meaningful, and asks what kinds of love might still survive when both bodies and emotions become increasingly available to measurement.
 
+[image-9]
 `,
 
   contributors: [
