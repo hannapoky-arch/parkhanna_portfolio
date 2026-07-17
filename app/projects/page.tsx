@@ -227,27 +227,53 @@ export default function ProjectsPage() {
         />
       </div>
     </div>
-  ) : project.thumbnailLayout === "landscapePortrait" ? (
-    <div className="grid w-full grid-cols-1 gap-2 md:w-fit md:grid-cols-[1fr_1fr] md:ml-auto">
-      <div className="h-[260px] w-full overflow-hidden md:h-[420px]">
-        <img
-          src={project.thumbnailImages?.[0] || project.images[0]}
-          alt={project.title}
-          className="h-full w-full object-cover"
-          style={{
-            objectPosition: project.thumbnailPosition || "center",
-          }}
-        />
-      </div>
 
-      <div className="h-[320px] w-full overflow-hidden md:h-[420px] md:aspect-[3/4]">
-        <img
-          src={project.thumbnailImages?.[1] || project.images[1]}
-          alt={project.title}
-          className="h-full w-full object-contain"
-        />
-      </div>
+    
+  ) : project.thumbnailLayout === "landscapePortrait" ? (
+  <div
+    className={`grid w-full grid-cols-1 gap-2 md:ml-auto ${
+      project.slug === "Heliosera"
+        ? "md:max-w-[1000px] md:grid-cols-2"
+        : "md:w-fit md:grid-cols-[1fr_1fr]"
+    }`}
+  >
+    <div
+      className={
+        project.slug === "Heliosera"
+          ? "aspect-[4/3] w-full overflow-hidden"
+          : "h-[320px] w-full overflow-hidden md:h-[420px]"
+      }
+    >
+      <img
+        src={project.thumbnailImages?.[0] || project.images[0]}
+        alt={project.title}
+        className={`block h-full w-full ${
+          project.slug === "Heliosera"
+            ? "object-contain"
+            : "object-cover"
+        }`}
+        style={{
+          objectPosition: project.thumbnailPosition || "center",
+        }}
+      />
     </div>
+
+    <div
+      className={
+        project.slug === "Heliosera"
+          ? "aspect-[4/3] w-full overflow-hidden"
+          : "h-[320px] w-full overflow-hidden md:h-[420px]"
+      }
+    >
+      <img
+        src={project.thumbnailImages?.[1] || project.images[1]}
+        alt={project.title}
+        className="block h-full w-full object-contain"
+      />
+    </div>
+  </div>
+
+
   ) : (
     <div className="grid grid-cols-1 gap-2 w-full max-w-[900px] ml-auto md:grid-cols-2">
       <div className="aspect-[4/3] overflow-hidden">

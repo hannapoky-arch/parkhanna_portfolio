@@ -67,7 +67,7 @@ export default async function ProjectDetailPage({
 
 {project.heroMedia?.src && (
   <div
-    className="mb-5 mx-auto"
+    className="mb-20 mx-auto"
     style={{
       maxWidth: project.imageMaxWidth || "1200px",
     }}
@@ -193,6 +193,12 @@ if (pairMatch) {
     first === 1 &&
     second === 2;
 
+  const isHelioseraProcessPair =
+  project.slug === "Heliosera" &&
+  first === 3 &&
+  second === 4;
+  
+
   if (isCupidasticResearchPairOneTwo) {
     return (
       <div
@@ -234,6 +240,47 @@ if (pairMatch) {
       </div>
     );
   }
+
+  if (isHelioseraProcessPair) {
+  return (
+    <div
+      key={index}
+      className="mx-auto my-24 w-full"
+      style={{ maxWidth: "1000px" }}
+    >
+      <div className="grid grid-cols-1 items-start gap-3 md:grid-cols-2">
+        <div>
+          <div className="aspect-[4/5] overflow-hidden">
+          <img
+            src={project.images[first - 1]}
+            alt={project.title}
+            className="h-full w-full object-cover"
+          />
+        </div>
+
+          {firstCaption && (
+            <p className={captionClassName}>{firstCaption}</p>
+          )}
+        </div>
+
+        <div>
+          <div className="aspect-[4/5] overflow-hidden">
+          <img
+            src={project.images[second - 1]}
+            alt={project.title}
+            className="h-full w-full object-cover"
+          />
+        </div>
+
+          {secondCaption && (
+            <p className={captionClassName}>{secondCaption}</p>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 
   return (
     <div

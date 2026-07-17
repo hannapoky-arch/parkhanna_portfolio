@@ -27,9 +27,94 @@ type Project = {
   };
 };
 
-
-
 export const projects: Project[] = [
+  {
+    slug: "Heliosera",
+    number: "AT-O.4",
+    title: "Heliosera : Biomimetic Soft Robotic System",
+    description: "Soft Robotics / Material Prototyping",
+    type: "Objects",
+    year: "2025",
+
+    thumbnailLayout: "landscapePortrait",
+
+    summary:
+      "A biomimetic soft robotic system that translates changing UV conditions into slow pneumatic movement through iterative material experimentation.",
+    content: `
+
+
+    
+Heliosera explores how soft robotic materials can make invisible environmental conditions physically perceptible.
+
+Inspired by the slow movements of Drosera (sundew), the project investigates how pneumatic silicone structures respond to prolonged changes in UV exposure, translating environmental data into gradual physical behaviour instead of conventional digital feedback.
+
+[image-1]
+
+# Biomimic soft robotics
+
+The project began by studying the movement of Drosera, a carnivorous plant that slowly bends its tentacles in response to external stimuli.
+
+Rather than imitating its appearance, the research translated this biological behaviour into a pneumatic soft robotic system capable of expressing environmental change through gradual physical movement.
+
+This biological reference became a starting point for exploring how material behaviour itself can function as an interface.
+
+[image-2]
+
+# Material Exploration
+
+A major part of the project focused on understanding how material properties influence robotic behaviour.
+
+Multiple iterations were produced using EcoFlex 20 and EcoFlex 30 silicone, comparing how different Shore hardness values affected flexibility, inflation pressure, recovery, and structural stability. Custom moulds were designed, 3D printed, and repeatedly refined to optimise chamber geometry and pneumatic performance.
+
+Rather than searching for a single ideal material, the process investigated how material decisions directly shaped the character and responsiveness of the robotic movement.
+
+[pair-3-4]
+
+# Prototypes
+
+The final prototype integrates a UV sensor, Arduino controller, air pump, and custom-cast silicone chambers into a responsive soft robotic system.
+
+Instead of visualising environmental data through numbers or screens, Heliosera communicates prolonged sunlight conditions through slow pneumatic movement. The project demonstrates how soft robotic materials can become an intuitive medium for environmental awareness by making invisible environmental changes physically observable.
+
+[image-5]
+
+`,
+  contributors: [
+    "Researcher / Illustrator — Hanna Park",
+    "Collaborator(Researcher) — Chiarra Patatti",
+    "Collaborator(Researcher) — Jiannuo Lu",
+  ],
+
+  literature: [
+    "Dunne & Raby — Speculative Everything (2013)",
+    "Donna Haraway — Staying with the Trouble (2016)",
+    "Timothy Morton — Hyperobjects (2013)",
+    "Sophie Lewis — Full Surrogacy Now (2019)",
+
+  ],
+
+    heroMedia: {
+  src: "/projects/heliosera/heliosera.webp",
+},
+
+thumbnailImages: [
+
+  "/projects/heliosera/heliosera_2.jpg",
+  "/projects/heliosera/heliosera_6.jpg",
+
+],
+
+    images: [
+      "/projects/heliosera/heliosera_1.png",
+      "/projects/heliosera/heliosera_2.jpg",
+      "/projects/heliosera/heliosera_3.jpg",
+      "/projects/heliosera/heliosera_4.jpg",
+      "/projects/heliosera/heliosera_5.jpg",
+
+    ],
+  },
+
+
   {
   slug: "cupidastic",
   number: "AT-O.3",
@@ -119,7 +204,8 @@ Unlike AI systems, humans cannot entirely conceal either love or a sneeze. This 
     "Video Director — Jin Roh",
     "Model — Bettina Man /  George Rybi / Visha Mehta",
     "Creative Technologist — Chanwoo Lee",
-    "Photographer — Sohee Goo"
+    "Photographer — Sohee Goo",
+    "Editorial Review — Ji Yun Kim"
   ],
 
   literature: [
@@ -450,10 +536,10 @@ By studying fungal networks alongside Amazonian ecological disruption, plant inv
 
   contributors: [
     "Researcher, Illustrator — Hanna Park",
-    "Collaborator — Enze Lian",
-    "Collaborator — Chiara Patatti",
-    "Collaborator — Neha Reddy",
-    "Collaborator — Filippo Torlonia",
+    "Collaborator(Researcher) — Enze Lian",
+    "Collaborator(Researcher) — Chiara Patatti",
+    "Collaborator(Researcher) — Neha Reddy",
+    "Collaborator(Researcher) — Filippo Torlonia",
     "Curatorial feedback — Design Museum",
     "Exhibited at — New Designers London"
   ],
