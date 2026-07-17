@@ -212,7 +212,7 @@ imageCaptions: [
   thumbnailLayout: "single",
 
   summary:
-    "A speculative research project exploring how microplastic toxicity, hormonal disruption, declining fertility, and AI-mediated intimacy may reshape future love.",
+    "A research-led design project investigating how microplastic toxicity, endocrine disruption, declining fertility, and AI-mediated intimacy may reshape future love.",
 
   content: `
 
@@ -220,7 +220,7 @@ imageCaptions: [
 
 # Research Overview
 
-Cupidastic Research investigates how environmental toxicity, reproductive uncertainty, and algorithmic intimacy may converge into a future condition where love becomes biological, measurable, and governable.
+Cupidastic investigates how environmental toxicity, reproductive uncertainty, and algorithmic intimacy may converge into a future condition where love becomes biological, measurable, and governable.
 
 The project began from a contradiction. While future technologies increasingly promise prediction, optimisation, and personalised decision-making, love remains valuable precisely because it resists full prediction. If the future were always clear, there would be no need for forecasts. In the same way, uncertainty is not only a source of anxiety, but also the condition that allows preferable futures to be imagined.
 
@@ -232,7 +232,7 @@ Within this context, Cupidastic asks what forms of love, care, and human unpredi
 
 # Problem Framing
 
-Microplastics are no longer external pollutants. Their accumulation within human tissues, endocrine systems, and reproductive organs suggests a slow transformation of biological conditions.
+Microplastics are increasingly understood not only as environmental pollutants, but also as contaminants that accumulate within human tissues, endocrine systems, and reproductive organs. Their accumulation within human tissues, endocrine systems, and reproductive organs suggests a slow transformation of biological conditions.
 
 The research focuses on how microplastic-induced hormonal disruption may reshape ideas of reproduction, attraction, and care. Endocrine-disrupting substances such as BPA, phthalates, and dioxins are treated not only as environmental risks, but as forces that may alter the affective and reproductive body. In this speculative framework, reproduction is no longer only genetic, cultural, or political. It becomes entangled with plastic particulates, synthetic materials, and long-term hormonal instability.
 
@@ -252,21 +252,47 @@ Forecasting translated these signals into possible, plausible, probable, and pre
 
 Worldbuilding then transformed these future conditions into narrative systems. The research developed speculative characters, public infrastructures, dating protocols, reproductive certificates, and love-compliance scenarios to make the future emotionally inhabitable rather than purely abstract.
 
-Finally, materialising translated this world into artefacts, interfaces, and embodied interactions. Thermographic imagery, GSR-based affective sensing, recycled leather, hugging gestures, and wearable forms were explored as ways to visualise emotional signals while preserving ambiguity.
+Finally, materialising translated this world into artefacts, interfaces, and embodied interactions. Thermographic imagery, GSR-based affective sensing, recycled leather, hugging gestures, and wearable forms were explored as ways to visualise emotional signals while preserving ambiguity. 
+
+These speculative methods were complemented by primary research, including expert interviews and embodied workshops, to examine the scientific grounding and experiential dimensions of the research questions.
 
 [pair-5-6]
 
+
+#Primary Research
+To ground the project in both scientific evidence and lived experience, the research combined an expert interview with embodied primary research.
+
+An interview with Dr Stephanie Wright (Imperial College London), an environmental toxicologist specialising in microplastic exposure and human health, was conducted to discuss the biological assumptions underpinning the project, the current limitations of scientific evidence, and future ethical considerations surrounding environmentally mediated changes in human relationships and reproduction.
+
+Alongside this expert interview, an exploratory workshop investigated how contemporary sensing technologies interpret intimate interactions through physiological sensing, AI-assisted facial expression analysis, and behavioural observation.
+
+Twelve participants with different interpersonal relationships—including acquaintances, randomly assigned pairs, and romantic couples—completed a series of structured hugging exercises while galvanic skin response (GSR), facial-expression data, observational notes, and post-session reflections were collected. By combining physiological measurements with qualitative observations, the workshop generated a multimodal dataset that informed the subsequent design process.
+
+[image-10]
+
+The workshop revealed several observations that directly informed the design process. Variations in hugging behaviour produced different physiological responses and computational interpretations, suggesting that intimate interactions remain highly contextual despite becoming increasingly measurable. Participants also expressed concerns regarding emotional biometric privacy, while technical limitations in passive thermal sensing motivated the incorporation of active thermal feedback into later prototypes.
+
+Rather than seeking to measure love itself, the research examined the boundaries of what contemporary sensing technologies can and cannot interpret, positioning emotional ambiguity as a critical design value rather than a technical limitation.
+
+[image-11]
+
 # Research Findings
 
-The research identified three key findings that shaped the final design direction.
+The research converged around three interconnected findings that shaped the final design direction.
 
-First, emerging biological studies suggest a possible link between microplastic exposure and oxytocin dysregulation. Wang et al. examined how exposure to polystyrene microplastics reduced social behaviour and brain oxytocin levels in mice through the gut-brain axis. This became an empirical trigger for the project’s speculative premise: an “oxytocin recession” in which environmental toxicity begins to affect future sociality, intimacy, and reproductive behaviour.
+Biological evidence
 
-Second, an affective sensing workshop at the Royal College of Art explored whether momentary love-spark events could be sensed through physiological and facial-expression data. Participants were placed in different relational pairings and asked to complete gaze and embrace exercises while galvanic skin response and AI-based facial expression analytics were recorded. The workshop suggested that affective intensity can already be partially operationalised through multimodal sensing.
+emerging biological evidence suggests that microplastic exposure may influence hormonal regulation associated with social behaviour and reproduction. Studies such as Wang et al. indicate a possible relationship between polystyrene microplastics, oxytocin dysregulation, and reduced social interaction in animal models. Rather than treating this as a prediction of human behaviour, the project adopts these findings as an early scientific signal for imagining future environmental conditions that may reshape human intimacy.
 
-Third, the workshop revealed concern around emotional biometric privacy. Participants expressed discomfort with the possibility that emotional data could be accessed by platforms, governments, or reproductive systems. This finding reframed the project from a simple visualisation of risk into a question of affective data sovereignty.
+Computational legibility
 
-Together, these findings shifted Cupidastic toward a more critical design question: if future systems can measure attraction, compatibility, and reproductive potential, how might people protect the parts of intimacy that should remain unmeasured?
+both the literature review and the primary research suggest that emotional interactions are becoming increasingly computationally legible. Physiological sensing, facial-expression analysis, and behavioural observation demonstrated that certain aspects of intimacy can already be translated into measurable data, while remaining highly dependent on context, bodily variation, and interpersonal relationships.
+
+Emotional ambiguity
+
+the research identified emotional ambiguity as a critical value rather than a technological limitation. Participants consistently questioned who should have access to affective data and whether intimate experiences ought to become measurable at all. These concerns shifted the project towards broader questions of emotional privacy, affective data sovereignty, and the preservation of uncertainty within future AI-mediated relationships.
+
+Together, these findings shifted the project from asking how intimacy can be measured to questioning what aspects of intimacy should remain beyond measurement.
 
 [image-7]
 
@@ -297,8 +323,8 @@ Cupidastic Research therefore operates as the project’s worldbuilding engine. 
     "Researcher — Hanna Park",
     "Designer / Scenario — Hanna Park",
     "Scenario Video Director — Jin Roh",
-    "Creative Technologist — Chanwoo Lee",
-    "Concept Photographer — Sohee Goo"
+    "Concept Photographer — Sohee Goo",
+    "Scientific Consultant — Dr Stephanie Wright (Imperial College London)"
   ],
 
   literature: [
@@ -343,7 +369,9 @@ Cupidastic Research therefore operates as the project’s worldbuilding engine. 
     "/projects/cupidastic-research/cupidastic-research-6.jpg",
     "/projects/cupidastic-research/cupidastic-research-7.jpg",
     "/projects/cupidastic-research/cupidastic-research-8.jpg",
-    "/projects/cupidastic-research/cupidastic-research-9.jpg"
+    "/projects/cupidastic-research/cupidastic-research-9.jpg",
+    "/projects/cupidastic-research/cupidastic-research-10.jpg",
+    "/projects/cupidastic-research/cupidastic-research-11.jpg"
   ],
 
   imageCaptions: [
