@@ -358,13 +358,21 @@ if (pairMatch) {
                     }
 
                       return (
-                        <p
-                          key={paragraph}
-                          className="text-[28px] leading-[1.3] tracking-[-0.035em] text-black md:text-[30px]"
-                        >
-                          {paragraph}
-                        </p>
-                      );
+                      <p
+                        key={paragraph}
+                        className="
+                          text-[22px]
+                          leading-[1.45]
+                          tracking-[-0.02em]
+                          text-black
+                          md:text-[30px]
+                          md:leading-[1.3]
+                          md:tracking-[-0.035em]
+                        "
+                      >
+                        {paragraph}
+                      </p>
+                    );
                     })}
                 </div>
             </section>
