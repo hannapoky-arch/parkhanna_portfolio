@@ -95,6 +95,7 @@ export default function Home() {
   >
     PROFILE
   </a>
+  
 </div>
 
         <div className="absolute left-6 right-6 top-[58%] flex -translate-y-1/2 justify-between gap-3 md:left-1/2 md:right-auto md:top-[49%] md:-translate-x-1/2 md:gap-[11px] md:justify-center">
