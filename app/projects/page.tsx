@@ -216,7 +216,7 @@ export default function ProjectsPage() {
       
      {/* RIGHT */}
 
-<div className="md:col-span-9 flex justify-end">
+<div className="w-full min-w-0 md:col-span-9 md:flex md:justify-end">
   {project.thumbnailLayout === "single" ? (
     <div className="w-full max-w-[900px] ml-auto">
       <div className="aspect-[16/9] overflow-hidden">
@@ -228,8 +228,8 @@ export default function ProjectsPage() {
       </div>
     </div>
   ) : project.thumbnailLayout === "landscapePortrait" ? (
-    <div className="grid grid-cols-[1fr_1fr] gap-2 w-fit ml-auto">
-      <div className="h-[420px] overflow-hidden">
+    <div className="grid w-full grid-cols-1 gap-2 md:w-fit md:grid-cols-[1fr_1fr] md:ml-auto">
+      <div className="h-[260px] w-full overflow-hidden md:h-[420px]">
         <img
           src={project.thumbnailImages?.[0] || project.images[0]}
           alt={project.title}
@@ -240,7 +240,7 @@ export default function ProjectsPage() {
         />
       </div>
 
-      <div className="h-[420px] aspect-[3/4] overflow-hidden">
+      <div className="h-[320px] w-full overflow-hidden md:h-[420px] md:aspect-[3/4]">
         <img
           src={project.thumbnailImages?.[1] || project.images[1]}
           alt={project.title}
