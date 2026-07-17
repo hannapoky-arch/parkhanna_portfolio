@@ -283,34 +283,90 @@ if (pairMatch) {
 
       return part
         .split("# ")
+
         .filter(Boolean)
-        .map((section) => {
+
+        .map((section, sectionIndex) => {
 
           const lines = section.trim().split("\n");
 
-          const title = lines[0];
+          // 이 text part가 실제로 "# 제목"으로 시작했는지 확인
 
-          const body = lines.slice(1).join("\n");
+          const hasSectionTitle =
+
+            part.trimStart().startsWith("# ") || sectionIndex > 0;
+
+          const title = hasSectionTitle ? lines[0] : null;
+
+          const body = hasSectionTitle
+
+            ? lines.slice(1).join("\n")
+
+            : lines.join("\n");
 
           return (
             <section
               key={title}
               className="mx-auto max-w-[900px] mb-40"
             >
+              {title && (
+
               <p className="mb-6 text-[18px] text-black/50">
+
                 {title}
+
               </p>
 
-              <div className="mx-auto max-w-[900px] space-y-8 text-[28px] leading-[1.3] tracking-[-0.035em] md:text-[30px]">
-                {body
-                  .split("\n\n")
-                  .filter(Boolean)
-                  .map((paragraph) => (
-                    <p key={paragraph}>
-                      {paragraph}
-                    </p>
-                  ))}
-              </div>
+            )}
+
+              <div className="mx-auto max-w-[900px] space-y-8">
+                  {body
+                    .split("\n\n")
+                    .filter(Boolean)
+                    .map((paragraph) => {
+                      const trimmed = paragraph.trim();
+
+                      if (trimmed.startsWith("## ")) {
+                        return (
+                          <p
+                            key={paragraph}
+                            className="pt-6 text-[18px] font-normal tracking-[-0.01em] text-black/50"
+                          >
+                            {trimmed.replace("## ", "")}
+                          </p>
+                        );
+                      }
+                      
+                      if (trimmed.startsWith("[small]")) {
+
+                      return (
+
+                        <p
+
+                          className="pt-6 text-[18px] text-black/50"
+
+                          key={paragraph}
+
+                        >
+
+                          {trimmed.replace("[small]", "").trim()}
+
+                        </p>
+
+                      );
+
+                    }
+
+                      return (
+                        <p
+                          key={paragraph}
+                          className="text-[28px] leading-[1.3] tracking-[-0.035em] text-black md:text-[30px]"
+                        >
+                          {paragraph}
+                        </p>
+                      );
+                    })}
+                </div>
             </section>
           );
         });

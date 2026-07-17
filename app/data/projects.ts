@@ -259,18 +259,24 @@ These speculative methods were complemented by primary research, including exper
 [pair-5-6]
 
 
-#Primary Research
+# Primary Research
+
 To ground the project in both scientific evidence and lived experience, the research combined an expert interview with embodied primary research.
 
 An interview with Dr Stephanie Wright (Imperial College London), an environmental toxicologist specialising in microplastic exposure and human health, was conducted to discuss the biological assumptions underpinning the project, the current limitations of scientific evidence, and future ethical considerations surrounding environmentally mediated changes in human relationships and reproduction.
 
 Alongside this expert interview, an exploratory workshop investigated how contemporary sensing technologies interpret intimate interactions through physiological sensing, AI-assisted facial expression analysis, and behavioural observation.
 
-Twelve participants with different interpersonal relationships—including acquaintances, randomly assigned pairs, and romantic couples—completed a series of structured hugging exercises while galvanic skin response (GSR), facial-expression data, observational notes, and post-session reflections were collected. By combining physiological measurements with qualitative observations, the workshop generated a multimodal dataset that informed the subsequent design process.
+Twelve participants with different interpersonal relationships — including acquaintances, randomly assigned pairs, and romantic couples — completed a series of structured hugging exercises while galvanic skin response (GSR), camera-based facial-expression data (Hume.AI), observational notes, and post-session reflections were collected. By combining physiological measurements with qualitative observations, the workshop generated a multimodal dataset that informed the subsequent design process.
 
 [image-10]
 
-The workshop revealed several observations that directly informed the design process. Variations in hugging behaviour produced different physiological responses and computational interpretations, suggesting that intimate interactions remain highly contextual despite becoming increasingly measurable. Participants also expressed concerns regarding emotional biometric privacy, while technical limitations in passive thermal sensing motivated the incorporation of active thermal feedback into later prototypes.
+
+The workshop revealed several observations that directly informed the design process. 
+
+Variations in hugging behaviour produced different physiological responses and computational interpretations, suggesting that intimate interactions remain highly contextual despite becoming increasingly measurable. 
+
+Participants also expressed concerns regarding emotional biometric privacy, while technical limitations in passive thermal sensing motivated the incorporation of active thermal feedback into later prototypes.
 
 Rather than seeking to measure love itself, the research examined the boundaries of what contemporary sensing technologies can and cannot interpret, positioning emotional ambiguity as a critical design value rather than a technical limitation.
 
@@ -278,23 +284,24 @@ Rather than seeking to measure love itself, the research examined the boundaries
 
 # Research Findings
 
-The research converged around three interconnected findings that shaped the final design direction.
+The research converged around three interconnected findings.
 
-Biological evidence
+[small] - Biological evidence
 
 emerging biological evidence suggests that microplastic exposure may influence hormonal regulation associated with social behaviour and reproduction. Studies such as Wang et al. indicate a possible relationship between polystyrene microplastics, oxytocin dysregulation, and reduced social interaction in animal models. Rather than treating this as a prediction of human behaviour, the project adopts these findings as an early scientific signal for imagining future environmental conditions that may reshape human intimacy.
 
-Computational legibility
+[small] - Computational legibility
 
 both the literature review and the primary research suggest that emotional interactions are becoming increasingly computationally legible. Physiological sensing, facial-expression analysis, and behavioural observation demonstrated that certain aspects of intimacy can already be translated into measurable data, while remaining highly dependent on context, bodily variation, and interpersonal relationships.
 
-Emotional ambiguity
+[small] - Emotional ambiguity
 
 the research identified emotional ambiguity as a critical value rather than a technological limitation. Participants consistently questioned who should have access to affective data and whether intimate experiences ought to become measurable at all. These concerns shifted the project towards broader questions of emotional privacy, affective data sovereignty, and the preservation of uncertainty within future AI-mediated relationships.
 
 Together, these findings shifted the project from asking how intimacy can be measured to questioning what aspects of intimacy should remain beyond measurement.
 
 [image-7]
+
 
 # Future Scenario
 
@@ -307,6 +314,7 @@ Within this world, Cupidastic emerges as a system for generating positive predic
 The scenario does not propose a technological solution to microplastic toxicity or declining fertility. Instead, it asks whether human unpredictability can remain a form of resistance inside systems designed to optimise intimacy.
 
 [image-8]
+
 
 # Research to Object
 
@@ -322,8 +330,8 @@ Cupidastic Research therefore operates as the project’s worldbuilding engine. 
   contributors: [
     "Researcher — Hanna Park",
     "Designer / Scenario — Hanna Park",
-    "Scenario Video Director — Jin Roh",
-    "Concept Photographer — Sohee Goo",
+    "Lead Professor — Dr. Nazli Terzioglu (Royal College of Art)",
+    "Key image video director — Jin Roh",
     "Scientific Consultant — Dr Stephanie Wright (Imperial College London)"
   ],
 
