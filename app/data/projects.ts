@@ -121,10 +121,11 @@ thumbnailImages: [
     ],
 
     imageCaptions: [
-      "Heliosera responding to UV exposure through pneumatic inflation (AI-enhanced visualisation).",
       "Material and functional studies documenting the iterative development of Heliosera.",
       "Fabricated components and assembly process of Heliosera.",
       "Material prototyping and pneumatic actuation experiments during the development of the robotic system.",
+      "",
+      ""
     ],
   },
 
