@@ -86,10 +86,13 @@ Instead of visualising environmental data through numbers or screens, Heliosera 
   ],
 
   literature: [
-    "Dunne & Raby — Speculative Everything (2013)",
-    "Donna Haraway — Staying with the Trouble (2016)",
-    "Timothy Morton — Hyperobjects (2013)",
-    "Sophie Lewis — Full Surrogacy Now (2019)",
+    "Boots (2024) Boots Vitamin D Rapid Test. Available at: https://www.boots.com/boots-vitamin-d-rapid-test-10339960 (Accessed: 18 July 2026).",
+    "CO2Meter (n.d.) CO₂ Carbon Dioxide Detector. Available at: https://www.co2meter.com/blogs/news/co2-carbon-dioxide-detector (Accessed: 18 July 2026).",
+    "Qiu, T. et al. (2024) ‘Bioinspired soft robotics: advances in material design and actuation’, Tribology Letters. Available at: https://link.springer.com/article/10.1007/s11249-024-01848-2 (Accessed: 18 July 2026).",
+    "Soft Robotics Toolkit (n.d.) Introduction to Soft Robots. Available at: https://www.softrobotics.io/intro-soft-robots (Accessed: 18 July 2026).",
+    "Tech Xplore (2022) Self-healing materials bring soft robotics closer to jellyfish and starfish. Available at: https://techxplore.com/news/2022-02-self-healing-materials-robotics-jelly-salt.html (Accessed: 18 July 2026).",
+    "YouTube (2023) DIY Soft Robotic Tentacle. Available at: https://www.youtube.com/watch?v=gPYjo-W2ctU (Accessed: 18 July 2026).",
+    "YouTube (2023) Soft Robotics Tutorial. Available at: https://www.youtube.com/watch?v=TyYW9BmMeSs (Accessed: 18 July 2026).",
 
   ],
 

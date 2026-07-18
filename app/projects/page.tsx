@@ -240,8 +240,8 @@ export default function ProjectsPage() {
     <div
       className={
         project.slug === "Heliosera"
-          ? "aspect-[4/3] w-full overflow-hidden"
-          : "h-[320px] w-full overflow-hidden md:h-[420px]"
+          ? "aspect-[4/3] w-full overflow-hidden bg-white"
+          : "h-[320px] w-full overflow-hidden bg-white md:h-[420px]"
       }
     >
       <img
@@ -261,8 +261,8 @@ export default function ProjectsPage() {
     <div
       className={
         project.slug === "Heliosera"
-          ? "aspect-[4/3] w-full overflow-hidden"
-          : "h-[320px] w-full overflow-hidden md:h-[420px]"
+          ? "aspect-[4/3] w-full overflow-hidden bg-white"
+          : "h-[320px] w-full overflow-hidden bg-white md:h-[420px]"
       }
     >
       <img
@@ -273,7 +273,7 @@ export default function ProjectsPage() {
     </div>
   </div>
 
-
+  
   ) : (
     <div className="grid grid-cols-1 gap-2 w-full max-w-[900px] ml-auto md:grid-cols-2">
       <div className="aspect-[4/3] overflow-hidden">
