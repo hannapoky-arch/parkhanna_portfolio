@@ -64,9 +64,8 @@ export default async function ProjectDetailPage({
 
 
         {/* HERO IMAGE */}
-
 {project.heroMedia?.src && (
-  <div
+  <figure
     className="mb-20 mx-auto"
     style={{
       maxWidth: project.imageMaxWidth || "1200px",
@@ -77,7 +76,13 @@ export default async function ProjectDetailPage({
       alt={project.title}
       className="w-full"
     />
-  </div>
+
+    {project.heroMedia.caption && (
+      <figcaption className="mt-3 text-[12px] leading-[1.5] text-neutral-500">
+        {project.heroMedia.caption}
+      </figcaption>
+    )}
+  </figure>
 )}
 
 

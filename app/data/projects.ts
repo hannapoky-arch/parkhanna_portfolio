@@ -24,6 +24,7 @@ type Project = {
 
   heroMedia?: {
     src: string;
+    caption?: string;
   };
 };
 
@@ -94,10 +95,13 @@ Instead of visualising environmental data through numbers or screens, Heliosera 
     "YouTube (2023) DIY Soft Robotic Tentacle. Available at: https://www.youtube.com/watch?v=gPYjo-W2ctU (Accessed: 18 July 2026).",
     "YouTube (2023) Soft Robotics Tutorial. Available at: https://www.youtube.com/watch?v=TyYW9BmMeSs (Accessed: 18 July 2026).",
 
+
   ],
 
     heroMedia: {
   src: "/projects/heliosera/heliosera.webp",
+  caption:
+    "Conceptual visualisation of Heliosera inflating in response to UV exposure (AI-enhanced).",
 },
 
 thumbnailImages: [
