@@ -123,8 +123,8 @@ thumbnailImages: [
     imageCaptions: [
       "Material and functional studies documenting the iterative development of Heliosera.",
       "Fabricated components and assembly process of Heliosera.",
-      "Material prototyping and pneumatic actuation experiments during the development of the robotic system.",
-      "",
+      "Material prototyping through iterative silicone casting and mould development.",
+      "Pneumatic actuation experiments for evaluating robotic movement and chamber engineering.",
       ""
     ],
   },
