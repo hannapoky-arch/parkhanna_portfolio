@@ -298,14 +298,14 @@ export default function ProfilePage() {
             <div className="space-y-3 text-[18px] md:text-[16px]">
 
               <a
-                href="mailto:hello@almostthere.studio"
+                href="mailto:hannapoky@gmail.co,"
                 className="block hover:text-blue-600"
               >
                 Email
               </a>
 
               <a
-                href="https://instagram.com/almostthere_lab"
+                href="https://instagram.com/hannapark_obj"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block hover:text-blue-600"

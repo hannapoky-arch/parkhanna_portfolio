@@ -53,7 +53,7 @@ Inspired by the slow movements of Drosera (sundew), the project investigates how
 
 # Biomimic soft robotics
 
-The project began by studying the movement of Drosera, a carnivorous plant that slowly bends its tentacles in response to external stimuli.
+The project began by studying the movement of Heliosera, a carnivorous plant that slowly bends its tentacles in response to external stimuli.
 
 Rather than imitating its appearance, the research translated this biological behaviour into a pneumatic soft robotic system capable of expressing environmental change through gradual physical movement.
 
